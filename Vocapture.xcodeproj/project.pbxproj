@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		A754A9C421FA22E100084E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9C321FA22E100084E93 /* AppDelegate.swift */; };
-		A754A9C621FA22E100084E93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9C521FA22E100084E93 /* ViewController.swift */; };
+		A754A9C621FA22E100084E93 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9C521FA22E100084E93 /* LoginVC.swift */; };
 		A754A9C921FA22E100084E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754A9C721FA22E100084E93 /* Main.storyboard */; };
 		A754A9CB21FA22E300084E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754A9CA21FA22E300084E93 /* Assets.xcassets */; };
 		A754A9CE21FA22E300084E93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754A9CC21FA22E300084E93 /* LaunchScreen.storyboard */; };
 		A754A9D921FA22E300084E93 /* VocaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9D821FA22E300084E93 /* VocaptureTests.swift */; };
 		A754A9E421FA22E300084E93 /* VocaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9E321FA22E300084E93 /* VocaptureUITests.swift */; };
+		A754A9F221FA261200084E93 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F121FA261200084E93 /* CameraVC.swift */; };
+		A754A9F421FA263700084E93 /* LearningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F321FA263700084E93 /* LearningVC.swift */; };
+		A754A9F721FA267A00084E93 /* ModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F621FA267A00084E93 /* ModuleVC.swift */; };
+		A754A9F921FA268600084E93 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F821FA268600084E93 /* SettingsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		A754A9C021FA22E100084E93 /* Vocapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754A9C321FA22E100084E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A754A9C521FA22E100084E93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A754A9C521FA22E100084E93 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A754A9C821FA22E100084E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A754A9CA21FA22E300084E93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A754A9CD21FA22E300084E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		A754A9DF21FA22E300084E93 /* VocaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocaptureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754A9E321FA22E300084E93 /* VocaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocaptureUITests.swift; sourceTree = "<group>"; };
 		A754A9E521FA22E300084E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A754A9F121FA261200084E93 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		A754A9F321FA263700084E93 /* LearningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningVC.swift; sourceTree = "<group>"; };
+		A754A9F621FA267A00084E93 /* ModuleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleVC.swift; sourceTree = "<group>"; };
+		A754A9F821FA268600084E93 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,8 @@
 		A754A9C221FA22E100084E93 /* Vocapture */ = {
 			isa = PBXGroup;
 			children = (
+				A754A9F521FA263E00084E93 /* View Controllers */,
 				A754A9C321FA22E100084E93 /* AppDelegate.swift */,
-				A754A9C521FA22E100084E93 /* ViewController.swift */,
 				A754A9C721FA22E100084E93 /* Main.storyboard */,
 				A754A9CA21FA22E300084E93 /* Assets.xcassets */,
 				A754A9CC21FA22E300084E93 /* LaunchScreen.storyboard */,
@@ -123,6 +131,18 @@
 				A754A9E521FA22E300084E93 /* Info.plist */,
 			);
 			path = VocaptureUITests;
+			sourceTree = "<group>";
+		};
+		A754A9F521FA263E00084E93 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A754A9C521FA22E100084E93 /* LoginVC.swift */,
+				A754A9F121FA261200084E93 /* CameraVC.swift */,
+				A754A9F321FA263700084E93 /* LearningVC.swift */,
+				A754A9F621FA267A00084E93 /* ModuleVC.swift */,
+				A754A9F821FA268600084E93 /* SettingsVC.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A754A9C621FA22E100084E93 /* ViewController.swift in Sources */,
+				A754A9F421FA263700084E93 /* LearningVC.swift in Sources */,
+				A754A9C621FA22E100084E93 /* LoginVC.swift in Sources */,
+				A754A9F221FA261200084E93 /* CameraVC.swift in Sources */,
+				A754A9F721FA267A00084E93 /* ModuleVC.swift in Sources */,
 				A754A9C421FA22E100084E93 /* AppDelegate.swift in Sources */,
+				A754A9F921FA268600084E93 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
