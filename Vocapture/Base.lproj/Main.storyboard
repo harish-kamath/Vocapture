@@ -125,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="2119.1999999999998" y="26.53673163418291"/>
         </scene>
-        <!--LearningVC-->
+        <!--Learning View-->
         <scene sceneID="gPK-Fj-uFw">
             <objects>
-                <viewController id="SWK-bA-Clj" customClass="LearningVC" customModule="Vocapture" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SWK-bA-Clj" customClass="LearningView" customModule="Vocapture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GXJ-Tn-7MW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

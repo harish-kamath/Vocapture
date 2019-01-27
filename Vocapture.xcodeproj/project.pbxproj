@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68643D3A21FD677100349CF0 /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68643D3921FD677100349CF0 /* LearningView.swift */; };
 		A754A9C421FA22E100084E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9C321FA22E100084E93 /* AppDelegate.swift */; };
 		A754A9C621FA22E100084E93 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9C521FA22E100084E93 /* LoginVC.swift */; };
 		A754A9C921FA22E100084E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754A9C721FA22E100084E93 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68643D3921FD677100349CF0 /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
 		A754A9C021FA22E100084E93 /* Vocapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754A9C321FA22E100084E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A754A9C521FA22E100084E93 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		A754A9B721FA22E100084E93 = {
 			isa = PBXGroup;
 			children = (
+				68643D3921FD677100349CF0 /* LearningView.swift */,
 				A754A9C221FA22E100084E93 /* Vocapture */,
 				A754A9D721FA22E300084E93 /* VocaptureTests */,
 				A754A9E221FA22E300084E93 /* VocaptureUITests */,
@@ -281,6 +284,7 @@
 				A754A9F221FA261200084E93 /* CameraVC.swift in Sources */,
 				A754A9F721FA267A00084E93 /* ModuleVC.swift in Sources */,
 				A754A9C421FA22E100084E93 /* AppDelegate.swift in Sources */,
+				68643D3A21FD677100349CF0 /* LearningView.swift in Sources */,
 				A754A9F921FA268600084E93 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,7 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57CPG488EU;
+				DEVELOPMENT_TEAM = 4SKPTERR7H;
 				INFOPLIST_FILE = Vocapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,7 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57CPG488EU;
+				DEVELOPMENT_TEAM = 4SKPTERR7H;
 				INFOPLIST_FILE = Vocapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
