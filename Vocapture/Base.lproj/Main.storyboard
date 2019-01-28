@@ -129,12 +129,12 @@
         <scene sceneID="gPK-Fj-uFw">
             <objects>
                 <viewController id="SWK-bA-Clj" customClass="LearningView" customModule="Vocapture" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GXJ-Tn-7MW">
+                    <view key="view" contentMode="scaleToFill" id="GXJ-Tn-7MW" customClass="learn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEARNING VIEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h58-Lw-tjf">
-                                <rect key="frame" x="45" y="310" width="285" height="47"/>
+                                <rect key="frame" x="45" y="74" width="285" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="fEz-md-Sy7"/>
                                     <constraint firstAttribute="width" constant="285" id="reo-aw-1DO"/>
@@ -143,11 +143,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lc-ne-PFw">
+                                <rect key="frame" x="122" y="388" width="133" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Module Selector"/>
+                                <connections>
+                                    <segue destination="Mwv-l6-BJX" kind="presentation" id="f5v-sM-ROB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKS-9n-eiZ">
+                                <rect key="frame" x="127" y="335" width="123" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Words Learned"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="h58-Lw-tjf" firstAttribute="leading" secondItem="GXJ-Tn-7MW" secondAttribute="leadingMargin" constant="29" id="Dae-qw-CWM"/>
                             <constraint firstItem="h58-Lw-tjf" firstAttribute="centerY" secondItem="GXJ-Tn-7MW" secondAttribute="centerY" id="Fch-It-8na"/>
-                            <constraint firstItem="h58-Lw-tjf" firstAttribute="centerX" secondItem="GXJ-Tn-7MW" secondAttribute="centerX" id="dcW-3J-v1B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h58-Lw-tjf" secondAttribute="trailing" constant="29" id="Lr9-K8-yGm"/>
+                            <constraint firstItem="h58-Lw-tjf" firstAttribute="top" secondItem="QbV-fi-d0C" secondAttribute="top" constant="10" id="Lxu-eq-sjc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QbV-fi-d0C"/>
                     </view>
@@ -237,4 +254,7 @@
             <point key="canvasLocation" x="1180" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="f5v-sM-ROB"/>
+    </inferredMetricsTieBreakers>
 </document>
