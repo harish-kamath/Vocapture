@@ -2,7 +2,7 @@
 //  LearningVC.swift
 //  Vocapture
 //
-//  Created by Harish Kamath on 1/24/19.
+//  Created by Mayank Kishore on 1/26/19.
 //  Copyright © 2019 Harish Kamath. All rights reserved.
 //
 

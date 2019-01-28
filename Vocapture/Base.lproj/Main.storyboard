@@ -125,11 +125,11 @@
             </objects>
             <point key="canvasLocation" x="2119.1999999999998" y="26.53673163418291"/>
         </scene>
-        <!--Learning View-->
+        <!--LearningVC-->
         <scene sceneID="gPK-Fj-uFw">
             <objects>
-                <viewController id="SWK-bA-Clj" customClass="LearningView" customModule="Vocapture" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GXJ-Tn-7MW" customClass="learn">
+                <viewController id="SWK-bA-Clj" customClass="LearningVC" customModule="Vocapture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="GXJ-Tn-7MW" customClass="learn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -149,7 +149,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Module Selector"/>
                                 <connections>
-                                    <segue destination="Mwv-l6-BJX" kind="presentation" id="f5v-sM-ROB"/>
+                                    <segue destination="Mwv-l6-BJX" kind="presentation" id="yyD-So-auz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKS-9n-eiZ">
@@ -255,6 +255,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="f5v-sM-ROB"/>
+        <segue reference="yyD-So-auz"/>
     </inferredMetricsTieBreakers>
 </document>
