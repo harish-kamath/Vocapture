@@ -30,6 +30,11 @@ class CameraVC: UIViewController, ARSCNViewDelegate {
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
+        guard let referenceObjects = ARReferenceObject.referenceObjects(inGroupNamed: "objects", bundle: nil) else {
+            fatalError("Missing expected asset catalog resources.")
+        }
+        configuration.detectionObjects = referenceObjects
+        sceneView.session.run(configuration)
         
         // Run the view's session
         sceneView.session.run(configuration)
@@ -40,6 +45,12 @@ class CameraVC: UIViewController, ARSCNViewDelegate {
         
         // Pause the view's session
         sceneView.session.pause()
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        if let objectAnchor = anchor as? ARObjectAnchor {
+            
+        }
     }
     
     
