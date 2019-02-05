@@ -88,7 +88,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-Rp-ibP">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-Rp-ibP">
                                 <rect key="frame" x="167" y="597" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="PMx-Dk-fOV"/>
@@ -99,7 +99,7 @@
                                     <segue destination="Mwv-l6-BJX" kind="show" id="KkL-1r-WLK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMC-hX-xnX">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMC-hX-xnX">
                                 <rect key="frame" x="82" y="597" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Nz5-qA-T7c"/>
@@ -117,7 +117,7 @@
                                     <action selector="expandMenu:" destination="mze-js-J0q" eventType="touchUpInside" id="ABn-Gl-o98"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyR-Xr-e3E">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyR-Xr-e3E">
                                 <rect key="frame" x="252" y="597" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Xec-6k-07f"/>
@@ -155,6 +155,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="InfoButton" destination="hwH-Lf-hJI" id="Fhe-g7-hON"/>
                         <outlet property="LearningButton" destination="DMC-hX-xnX" id="eg7-EJ-LxD"/>
                         <outlet property="ModulesButton" destination="Ffs-Rp-ibP" id="fga-7K-c5K"/>
                         <outlet property="SettingsButton" destination="PyR-Xr-e3E" id="xqr-Y4-oWs"/>
