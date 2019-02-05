@@ -88,10 +88,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-Rp-ibP">
-                                <rect key="frame" x="209" y="175" width="150" height="150"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-Rp-ibP">
+                                <rect key="frame" x="167" y="597" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="PMx-Dk-fOV"/>
+                                    <constraint firstAttribute="height" constant="60" id="PMx-Dk-fOV"/>
                                     <constraint firstAttribute="width" constant="60" id="mea-mP-w8L"/>
                                 </constraints>
                                 <state key="normal" image="ModulesIcon"/>
@@ -99,10 +99,28 @@
                                     <segue destination="Mwv-l6-BJX" kind="show" id="KkL-1r-WLK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyR-Xr-e3E">
-                                <rect key="frame" x="112" y="361" width="150" height="150"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMC-hX-xnX">
+                                <rect key="frame" x="82" y="597" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Xec-6k-07f"/>
+                                    <constraint firstAttribute="width" constant="60" id="Nz5-qA-T7c"/>
+                                    <constraint firstAttribute="height" constant="60" id="cLN-Cc-YbK"/>
+                                </constraints>
+                                <state key="normal" image="LearningIcon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwH-Lf-hJI">
+                                <rect key="frame" x="337" y="625" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="31O-4U-mEJ"/>
+                                    <constraint firstAttribute="width" secondItem="hwH-Lf-hJI" secondAttribute="height" multiplier="1:1" id="COC-rx-tHa"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="expandMenu:" destination="mze-js-J0q" eventType="touchUpInside" id="ABn-Gl-o98"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyR-Xr-e3E">
+                                <rect key="frame" x="252" y="597" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Xec-6k-07f"/>
                                     <constraint firstAttribute="width" constant="60" id="jLn-cP-lPF"/>
                                 </constraints>
                                 <state key="normal" image="SettingsIcon"/>
@@ -110,17 +128,19 @@
                                     <segue destination="Izl-cO-J1A" kind="show" id="UOZ-Bp-uoH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMC-hX-xnX">
-                                <rect key="frame" x="27" y="164" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="LearningIcon"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="PyR-Xr-e3E" firstAttribute="top" secondItem="Ffs-Rp-ibP" secondAttribute="bottom" constant="8" id="eWD-h0-9fj"/>
+                            <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="DMC-hX-xnX" secondAttribute="bottom" constant="10" id="5C1-Lq-3Qf"/>
+                            <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="Ffs-Rp-ibP" secondAttribute="bottom" constant="10" id="C5F-or-HRo"/>
+                            <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="PyR-Xr-e3E" secondAttribute="bottom" constant="10" id="H4a-Uc-9T0"/>
+                            <constraint firstItem="Ffs-Rp-ibP" firstAttribute="leading" secondItem="DMC-hX-xnX" secondAttribute="trailing" constant="25" id="N2e-Vv-S69"/>
+                            <constraint firstItem="hwH-Lf-hJI" firstAttribute="leading" secondItem="PyR-Xr-e3E" secondAttribute="trailing" constant="25" id="WOw-ql-dxm"/>
+                            <constraint firstItem="ghO-cj-oDN" firstAttribute="trailing" secondItem="hwH-Lf-hJI" secondAttribute="trailing" constant="16" id="Y5L-au-drH"/>
                             <constraint firstItem="Ffs-Rp-ibP" firstAttribute="centerX" secondItem="ZiB-B8-tXz" secondAttribute="centerX" id="enY-BF-psM"/>
+                            <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="hwH-Lf-hJI" secondAttribute="bottom" constant="20" id="i5U-xR-h78"/>
                             <constraint firstItem="PyR-Xr-e3E" firstAttribute="centerX" secondItem="ZiB-B8-tXz" secondAttribute="centerX" id="j3Z-Gy-sQ7"/>
+                            <constraint firstItem="PyR-Xr-e3E" firstAttribute="leading" secondItem="Ffs-Rp-ibP" secondAttribute="trailing" constant="25" id="vd4-RR-goe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ghO-cj-oDN"/>
                     </view>
@@ -136,6 +156,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="LearningButton" destination="DMC-hX-xnX" id="eg7-EJ-LxD"/>
+                        <outlet property="ModulesButton" destination="Ffs-Rp-ibP" id="fga-7K-c5K"/>
+                        <outlet property="SettingsButton" destination="PyR-Xr-e3E" id="xqr-Y4-oWs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="veL-eU-5ZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
