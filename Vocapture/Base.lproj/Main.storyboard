@@ -88,6 +88,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44G-te-Qq5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-Rp-ibP">
                                 <rect key="frame" x="167" y="597" width="60" height="60"/>
                                 <constraints>
@@ -159,6 +163,7 @@
                         <outlet property="LearningButton" destination="DMC-hX-xnX" id="eg7-EJ-LxD"/>
                         <outlet property="ModulesButton" destination="Ffs-Rp-ibP" id="fga-7K-c5K"/>
                         <outlet property="SettingsButton" destination="PyR-Xr-e3E" id="xqr-Y4-oWs"/>
+                        <outlet property="sceneView" destination="44G-te-Qq5" id="WPc-Gq-AF1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="veL-eU-5ZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
