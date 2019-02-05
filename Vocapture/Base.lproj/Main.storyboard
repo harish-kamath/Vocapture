@@ -69,6 +69,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44G-te-Qq5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-Rp-ibP">
                                 <rect key="frame" x="167" y="597" width="60" height="60"/>
                                 <constraints>
@@ -140,6 +144,7 @@
                         <outlet property="LearningButton" destination="DMC-hX-xnX" id="eg7-EJ-LxD"/>
                         <outlet property="ModulesButton" destination="Ffs-Rp-ibP" id="fga-7K-c5K"/>
                         <outlet property="SettingsButton" destination="PyR-Xr-e3E" id="xqr-Y4-oWs"/>
+                        <outlet property="sceneView" destination="44G-te-Qq5" id="WPc-Gq-AF1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="veL-eU-5ZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -165,19 +170,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lc-ne-PFw">
-                                <rect key="frame" x="122" y="388" width="133" height="34"/>
+                                <rect key="frame" x="116" y="544" width="143" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Module Selector"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.36862745098039218" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Module Selector">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="Mwv-l6-BJX" kind="presentation" id="yyD-So-auz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKS-9n-eiZ">
-                                <rect key="frame" x="127" y="335" width="123" height="34"/>
+                                <rect key="frame" x="116" y="489" width="143" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Words Learned"/>
+                                <color key="backgroundColor" red="0.1843137255" green="0.36862745099999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Words Learned">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -189,6 +202,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QbV-fi-d0C"/>
                     </view>
+                    <connections>
+                        <outlet property="modules" destination="7lc-ne-PFw" id="70O-1M-VYJ"/>
+                        <outlet property="wordsLearned" destination="fKS-9n-eiZ" id="FPM-Eg-Snz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HdD-Rz-vVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -378,6 +395,6 @@
         <image name="Vocapture" width="296" height="191"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KkL-1r-WLK"/>
+        <segue reference="yyD-So-auz"/>
     </inferredMetricsTieBreakers>
 </document>
