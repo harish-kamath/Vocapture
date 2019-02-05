@@ -88,6 +88,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQb-7D-h4x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-Rp-ibP">
                                 <rect key="frame" x="167" y="597" width="60" height="60"/>
                                 <constraints>
@@ -131,13 +134,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bQb-7D-h4x" firstAttribute="top" secondItem="ZiB-B8-tXz" secondAttribute="top" id="5B7-rb-ddh"/>
                             <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="DMC-hX-xnX" secondAttribute="bottom" constant="10" id="5C1-Lq-3Qf"/>
                             <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="Ffs-Rp-ibP" secondAttribute="bottom" constant="10" id="C5F-or-HRo"/>
                             <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="PyR-Xr-e3E" secondAttribute="bottom" constant="10" id="H4a-Uc-9T0"/>
                             <constraint firstItem="Ffs-Rp-ibP" firstAttribute="leading" secondItem="DMC-hX-xnX" secondAttribute="trailing" constant="25" id="N2e-Vv-S69"/>
                             <constraint firstItem="hwH-Lf-hJI" firstAttribute="leading" secondItem="PyR-Xr-e3E" secondAttribute="trailing" constant="25" id="WOw-ql-dxm"/>
                             <constraint firstItem="ghO-cj-oDN" firstAttribute="trailing" secondItem="hwH-Lf-hJI" secondAttribute="trailing" constant="16" id="Y5L-au-drH"/>
+                            <constraint firstItem="bQb-7D-h4x" firstAttribute="leading" secondItem="ghO-cj-oDN" secondAttribute="leading" id="ebG-fs-1ff"/>
+                            <constraint firstItem="bQb-7D-h4x" firstAttribute="bottom" secondItem="ghO-cj-oDN" secondAttribute="bottom" id="hUi-iW-0hM"/>
                             <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="hwH-Lf-hJI" secondAttribute="bottom" constant="20" id="i5U-xR-h78"/>
+                            <constraint firstItem="bQb-7D-h4x" firstAttribute="trailing" secondItem="ghO-cj-oDN" secondAttribute="trailing" id="kQ6-PR-qyC"/>
                             <constraint firstItem="PyR-Xr-e3E" firstAttribute="leading" secondItem="Ffs-Rp-ibP" secondAttribute="trailing" constant="25" id="vd4-RR-goe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ghO-cj-oDN"/>
@@ -159,6 +166,7 @@
                         <outlet property="LearningButton" destination="DMC-hX-xnX" id="eg7-EJ-LxD"/>
                         <outlet property="ModulesButton" destination="Ffs-Rp-ibP" id="fga-7K-c5K"/>
                         <outlet property="SettingsButton" destination="PyR-Xr-e3E" id="xqr-Y4-oWs"/>
+                        <outlet property="sceneView" destination="bQb-7D-h4x" id="v0S-CU-sxR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="veL-eU-5ZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
