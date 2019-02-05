@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mze-js-J0q">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -128,9 +128,7 @@
                             <constraint firstItem="Ffs-Rp-ibP" firstAttribute="leading" secondItem="DMC-hX-xnX" secondAttribute="trailing" constant="25" id="N2e-Vv-S69"/>
                             <constraint firstItem="hwH-Lf-hJI" firstAttribute="leading" secondItem="PyR-Xr-e3E" secondAttribute="trailing" constant="25" id="WOw-ql-dxm"/>
                             <constraint firstItem="ghO-cj-oDN" firstAttribute="trailing" secondItem="hwH-Lf-hJI" secondAttribute="trailing" constant="16" id="Y5L-au-drH"/>
-                            <constraint firstItem="Ffs-Rp-ibP" firstAttribute="centerX" secondItem="ZiB-B8-tXz" secondAttribute="centerX" id="enY-BF-psM"/>
                             <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="hwH-Lf-hJI" secondAttribute="bottom" constant="20" id="i5U-xR-h78"/>
-                            <constraint firstItem="PyR-Xr-e3E" firstAttribute="centerX" secondItem="ZiB-B8-tXz" secondAttribute="centerX" id="j3Z-Gy-sQ7"/>
                             <constraint firstItem="PyR-Xr-e3E" firstAttribute="leading" secondItem="Ffs-Rp-ibP" secondAttribute="trailing" constant="25" id="vd4-RR-goe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ghO-cj-oDN"/>
@@ -344,6 +342,6 @@
         <image name="SettingsIcon" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yyD-So-auz"/>
+        <segue reference="KkL-1r-WLK"/>
     </inferredMetricsTieBreakers>
 </document>
