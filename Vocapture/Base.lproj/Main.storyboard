@@ -169,18 +169,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEARNING VIEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h58-Lw-tjf">
-                                <rect key="frame" x="45" y="30" width="285" height="47"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="fEz-md-Sy7"/>
-                                    <constraint firstAttribute="width" constant="285" id="reo-aw-1DO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lc-ne-PFw">
-                                <rect key="frame" x="116" y="544" width="143" height="48"/>
+                                <rect key="frame" x="116" y="545" width="143" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.18431372549019609" green="0.36862745098039218" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
@@ -193,7 +183,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKS-9n-eiZ">
-                                <rect key="frame" x="116" y="489" width="143" height="50"/>
+                                <rect key="frame" x="116" y="490" width="143" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1843137255" green="0.36862745099999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
@@ -202,14 +192,22 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B8L-j7-eRH">
+                                <rect key="frame" x="16" y="131" width="343" height="289"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="LEARNING VIEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h58-Lw-tjf">
+                                <rect key="frame" x="45" y="48" width="285" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="fEz-md-Sy7"/>
+                                    <constraint firstAttribute="width" constant="285" id="reo-aw-1DO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="h58-Lw-tjf" firstAttribute="leading" secondItem="GXJ-Tn-7MW" secondAttribute="leadingMargin" constant="29" id="Dae-qw-CWM"/>
-                            <constraint firstItem="h58-Lw-tjf" firstAttribute="centerY" secondItem="GXJ-Tn-7MW" secondAttribute="centerY" id="Fch-It-8na"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="h58-Lw-tjf" secondAttribute="trailing" constant="29" id="Lr9-K8-yGm"/>
-                            <constraint firstItem="h58-Lw-tjf" firstAttribute="top" secondItem="QbV-fi-d0C" secondAttribute="top" constant="10" id="Lxu-eq-sjc"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QbV-fi-d0C"/>
                     </view>
                     <connections>
