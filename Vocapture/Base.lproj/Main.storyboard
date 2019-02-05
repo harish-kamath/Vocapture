@@ -404,6 +404,22 @@
             </objects>
             <point key="canvasLocation" x="3135.1999999999998" y="403.44827586206901"/>
         </scene>
+        <!--Item DetailVC-->
+        <scene sceneID="iAE-LY-bnK">
+            <objects>
+                <viewController storyboardIdentifier="ItemDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PG6-fH-wgT" customClass="ItemDetailVC" customModule="Vocapture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ufd-2e-jZg">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0Z1-Wv-gtc"/>
+                    </view>
+                    <size key="freeformSize" width="200" height="100"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bia-cH-a0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1271" y="-1325"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="vqN-Vc-cns">
             <objects>

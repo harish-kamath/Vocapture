@@ -18,6 +18,7 @@
 		A754A9F421FA263700084E93 /* LearningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F321FA263700084E93 /* LearningVC.swift */; };
 		A754A9F721FA267A00084E93 /* ModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F621FA267A00084E93 /* ModuleVC.swift */; };
 		A754A9F921FA268600084E93 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F821FA268600084E93 /* SettingsVC.swift */; };
+		A7674C4B220A430A00E3A7AC /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7674C4A220A430A00E3A7AC /* ItemDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A754A9F321FA263700084E93 /* LearningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningVC.swift; sourceTree = "<group>"; };
 		A754A9F621FA267A00084E93 /* ModuleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleVC.swift; sourceTree = "<group>"; };
 		A754A9F821FA268600084E93 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		A7674C4A220A430A00E3A7AC /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				A754A9C521FA22E100084E93 /* LoginVC.swift */,
 				A754A9F121FA261200084E93 /* CameraVC.swift */,
+				A7674C4A220A430A00E3A7AC /* ItemDetailVC.swift */,
 				A754A9F321FA263700084E93 /* LearningVC.swift */,
 				A754A9F621FA267A00084E93 /* ModuleVC.swift */,
 				A754A9F821FA268600084E93 /* SettingsVC.swift */,
@@ -279,6 +282,7 @@
 				A754A9F421FA263700084E93 /* LearningVC.swift in Sources */,
 				A754A9C621FA22E100084E93 /* LoginVC.swift in Sources */,
 				A754A9F221FA261200084E93 /* CameraVC.swift in Sources */,
+				A7674C4B220A430A00E3A7AC /* ItemDetailVC.swift in Sources */,
 				A754A9F721FA267A00084E93 /* ModuleVC.swift in Sources */,
 				A754A9C421FA22E100084E93 /* AppDelegate.swift in Sources */,
 				A754A9F921FA268600084E93 /* SettingsVC.swift in Sources */,

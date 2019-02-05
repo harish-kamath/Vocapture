@@ -48,8 +48,13 @@ class CameraVC: UIViewController, ARSCNViewDelegate {
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        if let objectAnchor = anchor as? ARObjectAnchor {
-            
+        if anchor is ARObjectAnchor {
+            print("Item Found!")
+            let plane = SCNPlane(width: 0.5, height: 0.4)
+            guard let IDVC = storyboard?.instantiateViewController(withIdentifier: "ItemDetailVC") as? ItemDetailVC else {print("No VC Found"); return}
+            plane.firstMaterial?.diffuse.contents = IDVC.view
+            let planeNode = SCNNode(geometry: plane)
+            node.addChildNode(planeNode)
         }
     }
     
