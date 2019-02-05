@@ -13,6 +13,7 @@ class CameraVC: UIViewController {
     @IBOutlet weak var LearningButton: UIButton!
     @IBOutlet weak var ModulesButton: UIButton!
     @IBOutlet weak var SettingsButton: UIButton!
+    @IBOutlet weak var InfoButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -27,20 +28,35 @@ class CameraVC: UIViewController {
             UIView.animate(withDuration: 0.2, animations: {
             self.LearningButton.alpha = 1
             self.LearningButton.frame = self.LearningButton.frame.offsetBy(dx: 20.0, dy: 0)
+                self.LearningButton.isEnabled = true
+                
             self.ModulesButton.alpha = 1
                 self.ModulesButton.frame = self.ModulesButton.frame.offsetBy(dx: 15.0, dy: 0)
+                self.ModulesButton.isEnabled = true
+                
             self.SettingsButton.alpha = 1
                 self.SettingsButton.frame = self.SettingsButton.frame.offsetBy(dx: 10.0, dy: 0)
+                self.SettingsButton.isEnabled = true
+                
+                
+            self.InfoButton.tintColor = UIColor.white
             }, completion: nil)
         }
         else{
             UIView.animate(withDuration: 0.2, animations: {
                 self.LearningButton.alpha = 0
                 self.LearningButton.frame = self.LearningButton.frame.offsetBy(dx: -20.0, dy: 0)
+                self.LearningButton.isEnabled = false
+                
                 self.ModulesButton.alpha = 0
                 self.ModulesButton.frame = self.ModulesButton.frame.offsetBy(dx: -15.0, dy: 0)
+                self.ModulesButton.isEnabled = false
+                
                 self.SettingsButton.alpha = 0
                 self.SettingsButton.frame = self.SettingsButton.frame.offsetBy(dx: -10.0, dy: 0)
+                self.SettingsButton.isEnabled = false
+                
+                self.InfoButton.tintColor = UIColor.black
             }, completion: nil)
             
         }
