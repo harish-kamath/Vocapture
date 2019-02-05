@@ -9,10 +9,13 @@
 import UIKit
 
 class LearningVC: UIViewController {
-
+    @IBOutlet var wordsLearned: UIButton!
+    @IBOutlet var modules: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        wordsLearned.layer.cornerRadius = 4
+        modules.layer.cornerRadius = 4
         // Do any additional setup after loading the view.
     }
     

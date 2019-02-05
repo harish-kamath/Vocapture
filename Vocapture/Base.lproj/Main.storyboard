@@ -133,7 +133,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="LkF-vQ-ISQ">
                         <barButtonItem key="leftBarButtonItem" width="50" style="plain" id="tSR-As-rgM">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QzM-mV-o3m">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QzM-mV-o3m">
                                 <rect key="frame" x="16" y="0.0" width="50" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Buttons"/>
@@ -152,7 +152,7 @@
         <scene sceneID="gPK-Fj-uFw">
             <objects>
                 <viewController id="SWK-bA-Clj" customClass="LearningVC" customModule="Vocapture" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="GXJ-Tn-7MW">
+                    <view key="view" contentMode="scaleToFill" id="GXJ-Tn-7MW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -166,31 +166,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lc-ne-PFw">
-                                <rect key="frame" x="122" y="388" width="133" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Module Selector"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lc-ne-PFw">
+                                <rect key="frame" x="99" y="482" width="176" height="47"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.4823529412" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="MXm-iE-KEQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Module Selector">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="Mwv-l6-BJX" kind="presentation" id="yyD-So-auz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKS-9n-eiZ">
-                                <rect key="frame" x="127" y="335" width="123" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKS-9n-eiZ">
+                                <rect key="frame" x="99" y="430" width="177" height="44"/>
+                                <color key="backgroundColor" red="0.31372549019607843" green="0.4823529411764706" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Wgt-xU-09s"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Words Learned"/>
+                                <state key="normal" title="Words Learned">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="h58-Lw-tjf" firstAttribute="leading" secondItem="GXJ-Tn-7MW" secondAttribute="leadingMargin" constant="29" id="Dae-qw-CWM"/>
-                            <constraint firstItem="h58-Lw-tjf" firstAttribute="centerY" secondItem="GXJ-Tn-7MW" secondAttribute="centerY" id="Fch-It-8na"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="h58-Lw-tjf" secondAttribute="trailing" constant="29" id="Lr9-K8-yGm"/>
-                            <constraint firstItem="h58-Lw-tjf" firstAttribute="top" secondItem="QbV-fi-d0C" secondAttribute="top" constant="10" id="Lxu-eq-sjc"/>
+                            <constraint firstItem="fKS-9n-eiZ" firstAttribute="leading" secondItem="7lc-ne-PFw" secondAttribute="leading" id="0Vi-Q7-D3e"/>
+                            <constraint firstItem="7lc-ne-PFw" firstAttribute="centerX" secondItem="GXJ-Tn-7MW" secondAttribute="centerX" id="3gE-q8-QWc"/>
+                            <constraint firstItem="fKS-9n-eiZ" firstAttribute="leading" secondItem="QbV-fi-d0C" secondAttribute="leading" constant="99" id="6ep-ZG-E4r"/>
+                            <constraint firstItem="7lc-ne-PFw" firstAttribute="top" secondItem="fKS-9n-eiZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Jtt-EY-zRv"/>
+                            <constraint firstItem="h58-Lw-tjf" firstAttribute="top" secondItem="QbV-fi-d0C" secondAttribute="top" constant="10" id="WAL-fz-TES"/>
+                            <constraint firstItem="QbV-fi-d0C" firstAttribute="bottom" secondItem="7lc-ne-PFw" secondAttribute="bottom" constant="138" id="gVj-DC-WaR"/>
+                            <constraint firstItem="h58-Lw-tjf" firstAttribute="centerX" secondItem="7lc-ne-PFw" secondAttribute="centerX" id="knZ-5T-nUL"/>
+                            <constraint firstItem="fKS-9n-eiZ" firstAttribute="centerX" secondItem="7lc-ne-PFw" secondAttribute="centerX" id="wuP-yi-Nro"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QbV-fi-d0C"/>
                     </view>
+                    <connections>
+                        <outlet property="modules" destination="7lc-ne-PFw" id="oMW-w7-5FE"/>
+                        <outlet property="wordsLearned" destination="fKS-9n-eiZ" id="xqh-4x-T32"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HdD-Rz-vVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,6 +334,6 @@
         <image name="Buttons" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KkL-1r-WLK"/>
+        <segue reference="yyD-So-auz"/>
     </inferredMetricsTieBreakers>
 </document>
