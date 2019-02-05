@@ -16,7 +16,7 @@ class ItemDetailVC: UIViewController {
         super.viewDidLoad()
         
         nameLabel.text = "Mayank's Pencil Pouch"
-        nameLabel.layer.addBorder(edge: UIRectEdge.bottom, color: UIColor.purple, thickness: 0.5)
+        nameLabel.layer.addBorder(edge: UIRectEdge.bottom, color: UIColor.purple, thickness: 1)
         descLabel.text = "A pouch"
 
         // Do any additional setup after loading the view.

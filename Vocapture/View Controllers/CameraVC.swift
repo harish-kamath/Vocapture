@@ -17,6 +17,8 @@ class CameraVC: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var InfoButton: UIButton!
     @IBOutlet weak var sceneView: ARSCNView!
     
+    var node: SCNNode?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,13 +52,34 @@ class CameraVC: UIViewController, ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         if anchor is ARObjectAnchor {
             print("Item Found!")
-            let plane = SCNPlane(width: 0.3, height: 0.2)
-            plane.cornerRadius = 0.5
+            let plane = SCNPlane(width: 0.3, height: 0.15)
+            plane.cornerRadius = 0.01
             guard let IDVC = storyboard?.instantiateViewController(withIdentifier: "ItemDetailVC") as? ItemDetailVC else {print("No VC Found"); return}
             plane.firstMaterial?.diffuse.contents = IDVC.view
             let planeNode = SCNNode(geometry: plane)
+            
+            self.node = planeNode
             node.addChildNode(planeNode)
         }
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+        
+        //1. Get The Current Node On Screen & The Camera Point Of View
+        guard let nodeToPosition = self.node, let pointOfView = sceneView.pointOfView else { return }
+        
+        //2. Set The Position Of The Node 1m Away From The Camera
+        nodeToPosition.simdPosition.z = pointOfView.presentation.worldPosition.z - 0.1
+        
+        //3. Get The Current Distance Between The SCNNode & The Camera
+        let positionOfNode = SCNVector3ToGLKVector3(nodeToPosition.presentation.worldPosition)
+        
+        let positionOfCamera = SCNVector3ToGLKVector3(pointOfView.presentation.worldPosition)
+        
+        let distanceBetweenNodeAndCamera = GLKVector3Distance(positionOfNode, positionOfCamera)
+        
+        print(distanceBetweenNodeAndCamera)
+        
     }
     
     
