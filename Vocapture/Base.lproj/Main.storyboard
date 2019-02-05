@@ -88,43 +88,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAMERA VIEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML2-vR-9ph">
-                                <rect key="frame" x="59" y="310" width="257" height="47"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="257" id="Q7U-mO-WNY"/>
-                                    <constraint firstAttribute="height" constant="47" id="YL6-9f-Tkw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-Rp-ibP">
-                                <rect key="frame" x="157.5" y="450" width="60" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-Rp-ibP">
+                                <rect key="frame" x="209" y="175" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="PMx-Dk-fOV"/>
                                     <constraint firstAttribute="width" constant="60" id="mea-mP-w8L"/>
                                 </constraints>
-                                <state key="normal" title="Modules"/>
+                                <state key="normal" image="ModulesIcon"/>
                                 <connections>
                                     <segue destination="Mwv-l6-BJX" kind="show" id="KkL-1r-WLK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyR-Xr-e3E">
-                                <rect key="frame" x="157.5" y="488" width="60" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyR-Xr-e3E">
+                                <rect key="frame" x="112" y="361" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Xec-6k-07f"/>
                                     <constraint firstAttribute="width" constant="60" id="jLn-cP-lPF"/>
                                 </constraints>
-                                <state key="normal" title="Settings"/>
+                                <state key="normal" image="SettingsIcon"/>
                                 <connections>
                                     <segue destination="Izl-cO-J1A" kind="show" id="UOZ-Bp-uoH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMC-hX-xnX">
+                                <rect key="frame" x="27" y="164" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="LearningIcon"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ML2-vR-9ph" firstAttribute="centerX" secondItem="ZiB-B8-tXz" secondAttribute="centerX" id="2sS-Fk-IIT"/>
-                            <constraint firstItem="ML2-vR-9ph" firstAttribute="centerY" secondItem="ZiB-B8-tXz" secondAttribute="centerY" id="BbB-Zm-tec"/>
                             <constraint firstItem="PyR-Xr-e3E" firstAttribute="top" secondItem="Ffs-Rp-ibP" secondAttribute="bottom" constant="8" id="eWD-h0-9fj"/>
                             <constraint firstItem="Ffs-Rp-ibP" firstAttribute="centerX" secondItem="ZiB-B8-tXz" secondAttribute="centerX" id="enY-BF-psM"/>
                             <constraint firstItem="PyR-Xr-e3E" firstAttribute="centerX" secondItem="ZiB-B8-tXz" secondAttribute="centerX" id="j3Z-Gy-sQ7"/>
@@ -133,10 +126,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="LkF-vQ-ISQ">
                         <barButtonItem key="leftBarButtonItem" width="50" style="plain" id="tSR-As-rgM">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QzM-mV-o3m">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QzM-mV-o3m">
                                 <rect key="frame" x="16" y="0.0" width="50" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Buttons"/>
+                                <state key="normal" image="LearningIcon"/>
                             </button>
                             <connections>
                                 <segue destination="SWK-bA-Clj" kind="show" id="2mx-zc-U5m"/>
@@ -152,12 +145,12 @@
         <scene sceneID="gPK-Fj-uFw">
             <objects>
                 <viewController id="SWK-bA-Clj" customClass="LearningVC" customModule="Vocapture" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="GXJ-Tn-7MW" customClass="learn">
+                    <view key="view" contentMode="scaleToFill" id="GXJ-Tn-7MW" customClass="learn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEARNING VIEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h58-Lw-tjf">
-                                <rect key="frame" x="45" y="74" width="285" height="47"/>
+                                <rect key="frame" x="45" y="30" width="285" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="fEz-md-Sy7"/>
                                     <constraint firstAttribute="width" constant="285" id="reo-aw-1DO"/>
@@ -296,10 +289,9 @@
         <!--Navigation Controller-->
         <scene sceneID="vqN-Vc-cns">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ft-jZ-zA9" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="9ft-jZ-zA9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7MK-Ev-sEU">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -313,7 +305,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Buttons" width="50" height="50"/>
+        <image name="LearningIcon" width="150" height="150"/>
+        <image name="ModulesIcon" width="150" height="150"/>
+        <image name="SettingsIcon" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="KkL-1r-WLK"/>
