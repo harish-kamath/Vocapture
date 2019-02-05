@@ -136,11 +136,7 @@
         <scene sceneID="gPK-Fj-uFw">
             <objects>
                 <viewController id="SWK-bA-Clj" customClass="LearningVC" customModule="Vocapture" customModuleProvider="target" sceneMemberID="viewController">
-<<<<<<< HEAD
                     <view key="view" contentMode="scaleToFill" id="GXJ-Tn-7MW">
-=======
-                    <view key="view" contentMode="scaleToFill" id="GXJ-Tn-7MW" customClass="learn">
->>>>>>> 3b3e1c98efe49dad4cd75d03421c6b5b6cfd4859
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
