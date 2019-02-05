@@ -92,37 +92,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-Rp-ibP">
-                                <rect key="frame" x="167" y="597" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="PMx-Dk-fOV"/>
-                                    <constraint firstAttribute="width" constant="60" id="mea-mP-w8L"/>
-                                </constraints>
-                                <state key="normal" image="ModulesIcon"/>
-                                <connections>
-                                    <segue destination="Mwv-l6-BJX" kind="show" id="KkL-1r-WLK"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMC-hX-xnX">
-                                <rect key="frame" x="82" y="597" width="60" height="60"/>
+                                <rect key="frame" x="295" y="432" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Nz5-qA-T7c"/>
                                     <constraint firstAttribute="height" constant="60" id="cLN-Cc-YbK"/>
                                 </constraints>
                                 <state key="normal" image="LearningIcon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwH-Lf-hJI">
-                                <rect key="frame" x="337" y="625" width="22" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwH-Lf-hJI">
+                                <rect key="frame" x="300" y="587" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="22" id="31O-4U-mEJ"/>
-                                    <constraint firstAttribute="width" secondItem="hwH-Lf-hJI" secondAttribute="height" multiplier="1:1" id="COC-rx-tHa"/>
+                                    <constraint firstAttribute="width" constant="50" id="31O-4U-mEJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="x1O-Rd-Yze"/>
                                 </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <state key="normal" image="MenuIcon"/>
                                 <connections>
                                     <action selector="expandMenu:" destination="mze-js-J0q" eventType="touchUpInside" id="ABn-Gl-o98"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyR-Xr-e3E">
-                                <rect key="frame" x="252" y="597" width="60" height="60"/>
+                                <rect key="frame" x="295" y="517" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Xec-6k-07f"/>
                                     <constraint firstAttribute="width" constant="60" id="jLn-cP-lPF"/>
@@ -132,17 +123,28 @@
                                     <segue destination="0uN-Qb-FQa" kind="show" id="AXt-jB-WOL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-Rp-ibP">
+                                <rect key="frame" x="295" y="347" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="PMx-Dk-fOV"/>
+                                    <constraint firstAttribute="width" constant="60" id="mea-mP-w8L"/>
+                                </constraints>
+                                <state key="normal" image="ModulesIcon"/>
+                                <connections>
+                                    <segue destination="Mwv-l6-BJX" kind="show" id="KkL-1r-WLK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="DMC-hX-xnX" secondAttribute="bottom" constant="10" id="5C1-Lq-3Qf"/>
-                            <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="Ffs-Rp-ibP" secondAttribute="bottom" constant="10" id="C5F-or-HRo"/>
-                            <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="PyR-Xr-e3E" secondAttribute="bottom" constant="10" id="H4a-Uc-9T0"/>
-                            <constraint firstItem="Ffs-Rp-ibP" firstAttribute="leading" secondItem="DMC-hX-xnX" secondAttribute="trailing" constant="25" id="N2e-Vv-S69"/>
-                            <constraint firstItem="hwH-Lf-hJI" firstAttribute="leading" secondItem="PyR-Xr-e3E" secondAttribute="trailing" constant="25" id="WOw-ql-dxm"/>
-                            <constraint firstItem="ghO-cj-oDN" firstAttribute="trailing" secondItem="hwH-Lf-hJI" secondAttribute="trailing" constant="16" id="Y5L-au-drH"/>
-                            <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="hwH-Lf-hJI" secondAttribute="bottom" constant="20" id="i5U-xR-h78"/>
-                            <constraint firstItem="PyR-Xr-e3E" firstAttribute="leading" secondItem="Ffs-Rp-ibP" secondAttribute="trailing" constant="25" id="vd4-RR-goe"/>
+                            <constraint firstItem="hwH-Lf-hJI" firstAttribute="top" secondItem="PyR-Xr-e3E" secondAttribute="bottom" constant="10" id="8Pi-LX-6rX"/>
+                            <constraint firstItem="ghO-cj-oDN" firstAttribute="trailing" secondItem="PyR-Xr-e3E" secondAttribute="trailing" constant="20" id="FFL-kD-W2N"/>
+                            <constraint firstItem="DMC-hX-xnX" firstAttribute="top" secondItem="Ffs-Rp-ibP" secondAttribute="bottom" constant="25" id="HvQ-ka-4XH"/>
+                            <constraint firstItem="Ffs-Rp-ibP" firstAttribute="centerX" secondItem="PyR-Xr-e3E" secondAttribute="centerX" id="Ipr-tK-N0R"/>
+                            <constraint firstItem="hwH-Lf-hJI" firstAttribute="centerX" secondItem="PyR-Xr-e3E" secondAttribute="centerX" id="c5I-GU-Vvg"/>
+                            <constraint firstItem="ghO-cj-oDN" firstAttribute="bottom" secondItem="hwH-Lf-hJI" secondAttribute="bottom" constant="30" id="i5U-xR-h78"/>
+                            <constraint firstItem="PyR-Xr-e3E" firstAttribute="top" secondItem="DMC-hX-xnX" secondAttribute="bottom" constant="25" id="o7i-TG-wbI"/>
+                            <constraint firstItem="DMC-hX-xnX" firstAttribute="centerX" secondItem="PyR-Xr-e3E" secondAttribute="centerX" id="ycq-if-a52"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ghO-cj-oDN"/>
                     </view>
@@ -409,10 +411,11 @@
     </scenes>
     <resources>
         <image name="LearningIcon" width="150" height="150"/>
+        <image name="MenuIcon" width="150" height="150"/>
         <image name="ModulesIcon" width="150" height="150"/>
         <image name="SettingsIcon" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yyD-So-auz"/>
+        <segue reference="KkL-1r-WLK"/>
     </inferredMetricsTieBreakers>
 </document>
