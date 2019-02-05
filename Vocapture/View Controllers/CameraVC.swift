@@ -47,15 +47,15 @@ class CameraVC: UIViewController, ARSCNViewDelegate {
         if(LearningButton.alpha < 1){
             UIView.animate(withDuration: 0.2, animations: {
             self.LearningButton.alpha = 1
-            self.LearningButton.frame = self.LearningButton.frame.offsetBy(dx: 20.0, dy: 0)
+            self.LearningButton.frame = self.LearningButton.frame.offsetBy(dx: 0.0, dy: -20.0)
                 self.LearningButton.isEnabled = true
                 
             self.ModulesButton.alpha = 1
-                self.ModulesButton.frame = self.ModulesButton.frame.offsetBy(dx: 15.0, dy: 0)
+                self.ModulesButton.frame = self.ModulesButton.frame.offsetBy(dx: 0.0, dy: -20.0)
                 self.ModulesButton.isEnabled = true
                 
             self.SettingsButton.alpha = 1
-                self.SettingsButton.frame = self.SettingsButton.frame.offsetBy(dx: 10.0, dy: 0)
+                self.SettingsButton.frame = self.SettingsButton.frame.offsetBy(dx: 0.0, dy: -20.0)
                 self.SettingsButton.isEnabled = true
                 
                 
@@ -65,18 +65,18 @@ class CameraVC: UIViewController, ARSCNViewDelegate {
         else{
             UIView.animate(withDuration: 0.2, animations: {
                 self.LearningButton.alpha = 0
-                self.LearningButton.frame = self.LearningButton.frame.offsetBy(dx: -20.0, dy: 0)
+                self.LearningButton.frame = self.LearningButton.frame.offsetBy(dx: 0.0, dy: 20.0)
                 self.LearningButton.isEnabled = false
                 
                 self.ModulesButton.alpha = 0
-                self.ModulesButton.frame = self.ModulesButton.frame.offsetBy(dx: -15.0, dy: 0)
+                self.ModulesButton.frame = self.ModulesButton.frame.offsetBy(dx: 0.0, dy: 20.0)
                 self.ModulesButton.isEnabled = false
                 
                 self.SettingsButton.alpha = 0
-                self.SettingsButton.frame = self.SettingsButton.frame.offsetBy(dx: -10.0, dy: 0)
+                self.SettingsButton.frame = self.SettingsButton.frame.offsetBy(dx: 0.0, dy: 20.0)
                 self.SettingsButton.isEnabled = false
                 
-                self.InfoButton.tintColor = UIColor.black
+                self.InfoButton.tintColor = UIColor.lightGray
             }, completion: nil)
             
         }
