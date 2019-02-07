@@ -19,6 +19,7 @@
 		A754A9F721FA267A00084E93 /* ModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F621FA267A00084E93 /* ModuleVC.swift */; };
 		A754A9F921FA268600084E93 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F821FA268600084E93 /* SettingsVC.swift */; };
 		A7674C4B220A430A00E3A7AC /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7674C4A220A430A00E3A7AC /* ItemDetailVC.swift */; };
+		CFE09A11220CF37E00DBED65 /* yolo_v3_1080p.mov in Resources */ = {isa = PBXBuildFile; fileRef = CFE09A10220CF37E00DBED65 /* yolo_v3_1080p.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A754A9F621FA267A00084E93 /* ModuleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleVC.swift; sourceTree = "<group>"; };
 		A754A9F821FA268600084E93 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		A7674C4A220A430A00E3A7AC /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
+		CFE09A10220CF37E00DBED65 /* yolo_v3_1080p.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = yolo_v3_1080p.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		A754A9B721FA22E100084E93 = {
 			isa = PBXGroup;
 			children = (
+				CFE09A10220CF37E00DBED65 /* yolo_v3_1080p.mov */,
 				A754A9C221FA22E100084E93 /* Vocapture */,
 				A754A9D721FA22E300084E93 /* VocaptureTests */,
 				A754A9E221FA22E300084E93 /* VocaptureUITests */,
@@ -252,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE09A11220CF37E00DBED65 /* yolo_v3_1080p.mov in Resources */,
 				A754A9CE21FA22E300084E93 /* LaunchScreen.storyboard in Resources */,
 				A754A9CB21FA22E300084E93 /* Assets.xcassets in Resources */,
 				A754A9C921FA22E100084E93 /* Main.storyboard in Resources */,
