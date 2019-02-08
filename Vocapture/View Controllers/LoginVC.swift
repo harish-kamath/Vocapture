@@ -26,18 +26,19 @@ class LoginVC: UIViewController {
         let newLayer = AVPlayerLayer(player: player)
         newLayer.frame = self.videoView.frame
         self.videoView.layer.addSublayer(newLayer)
+        self.viewWithTag("loginMainView").sendSubviewToBack(videoView)
         newLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         
         player.play()
         player.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none
         
         
-//        NotificationCenter.default.addObserver(self, selector:  #selector(LoginVC.videoDidPlayToEnd( :)), name: NSNotification.Name(rawValue: "AVPlayerItemDidPlayToEndTimeNotification"), object: player.currentItem)
-//    }
+        NotificationCenter.default.addObserver(self, selector:  #selector(LoginVC.videoDidPlayToEnd(_:)), name: NSNotification.Name(rawValue: "AVPlayerItemDidPlayToEndTimeNotification"), object: player.currentItem)
+    }
     
-//    @objc func videoDidPlayToEnd(_ notification: Notification) {
-//        let player: AVPlayerItem = notification.object as! AVPlayerItem
-//        player.seek(to: CMTime.zero)
+    @objc func videoDidPlayToEnd(_ notification: Notification) {
+        let player: AVPlayerItem = notification.object as! AVPlayerItem
+        player.seek(to: CMTime.zero)
     }
 
 //    var avPlayer: AVPlayer!

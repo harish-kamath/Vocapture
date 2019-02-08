@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A754A9C421FA22E100084E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9C321FA22E100084E93 /* AppDelegate.swift */; };
 		A754A9C621FA22E100084E93 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9C521FA22E100084E93 /* LoginVC.swift */; };
-		A754A9C921FA22E100084E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754A9C721FA22E100084E93 /* Main.storyboard */; };
+		A754A9C921FA22E100084E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754A9C721FA22E100084E93 /* Main.storyboard */; settings = {ASSET_TAGS = (loginMainView, ); }; };
 		A754A9CB21FA22E300084E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754A9CA21FA22E300084E93 /* Assets.xcassets */; };
 		A754A9CE21FA22E300084E93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754A9CC21FA22E300084E93 /* LaunchScreen.storyboard */; };
 		A754A9D921FA22E300084E93 /* VocaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9D821FA22E300084E93 /* VocaptureTests.swift */; };
@@ -213,6 +213,9 @@
 		A754A9B821FA22E100084E93 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					loginMainView,
+				);
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Harish Kamath";
