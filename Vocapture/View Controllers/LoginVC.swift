@@ -13,6 +13,12 @@ import AVKit
 class LoginVC: UIViewController {
     
     @IBOutlet weak var videoView: UIView!
+    @IBOutlet weak var mainView: UIView!
+    @IBOutlet var loginButton: UIButton!
+    @IBOutlet var skipLoginButton: UIButton!
+    @IBOutlet var signUpButton: UIButton!
+    @IBOutlet var dontHaveAccountLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +32,7 @@ class LoginVC: UIViewController {
         let newLayer = AVPlayerLayer(player: player)
         newLayer.frame = self.videoView.frame
         self.videoView.layer.addSublayer(newLayer)
-        self.viewWithTag("loginMainView").sendSubviewToBack(videoView)
+        self.mainView.sendSubviewToBack(videoView)
         newLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         
         player.play()
@@ -34,6 +40,15 @@ class LoginVC: UIViewController {
         
         
         NotificationCenter.default.addObserver(self, selector:  #selector(LoginVC.videoDidPlayToEnd(_:)), name: NSNotification.Name(rawValue: "AVPlayerItemDidPlayToEndTimeNotification"), object: player.currentItem)
+        
+        loginButton.layer.cornerRadius = loginButton.frame.size.width / 6
+        skipLoginButton.layer.cornerRadius = skipLoginButton.frame.size.width / 6
+        signUpButton.layer.cornerRadius = signUpButton.frame.size.width / 6
+        
+        // not rounding corners as intended, likely bc it's not a button
+        dontHaveAccountLabel.layer.cornerRadius = dontHaveAccountLabel.frame.size.width / 6
+        
+        
     }
     
     @objc func videoDidPlayToEnd(_ notification: Notification) {
