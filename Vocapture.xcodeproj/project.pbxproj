@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15D04BAE826B50912FBE98B1 /* libPods-Vocapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95475231DC0805867A005737 /* libPods-Vocapture.a */; };
 		A754A9C421FA22E100084E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9C321FA22E100084E93 /* AppDelegate.swift */; };
 		A754A9C621FA22E100084E93 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9C521FA22E100084E93 /* LoginVC.swift */; };
 		A754A9C921FA22E100084E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754A9C721FA22E100084E93 /* Main.storyboard */; settings = {ASSET_TAGS = (loginMainView, ); }; };
@@ -40,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4720834E40E09E943549DE21 /* Pods-Vocapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocapture.release.xcconfig"; path = "Target Support Files/Pods-Vocapture/Pods-Vocapture.release.xcconfig"; sourceTree = "<group>"; };
+		53A3C640F611B9BC8C6C0B89 /* Pods-Vocapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocapture.debug.xcconfig"; path = "Target Support Files/Pods-Vocapture/Pods-Vocapture.debug.xcconfig"; sourceTree = "<group>"; };
+		95475231DC0805867A005737 /* libPods-Vocapture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vocapture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754A9C021FA22E100084E93 /* Vocapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754A9C321FA22E100084E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A754A9C521FA22E100084E93 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D04BAE826B50912FBE98B1 /* libPods-Vocapture.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52DD6BE7BEB7CAB8BC877789 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95475231DC0805867A005737 /* libPods-Vocapture.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53FC0584E131184FCC7C83D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53A3C640F611B9BC8C6C0B89 /* Pods-Vocapture.debug.xcconfig */,
+				4720834E40E09E943549DE21 /* Pods-Vocapture.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A754A9B721FA22E100084E93 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +117,8 @@
 				A754A9D721FA22E300084E93 /* VocaptureTests */,
 				A754A9E221FA22E300084E93 /* VocaptureUITests */,
 				A754A9C121FA22E100084E93 /* Products */,
+				53FC0584E131184FCC7C83D5 /* Pods */,
+				52DD6BE7BEB7CAB8BC877789 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +183,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A754A9E821FA22E300084E93 /* Build configuration list for PBXNativeTarget "Vocapture" */;
 			buildPhases = (
+				FEDEF788F590BF93C86D8165 /* [CP] Check Pods Manifest.lock */,
 				A754A9BC21FA22E100084E93 /* Sources */,
 				A754A9BD21FA22E100084E93 /* Frameworks */,
 				A754A9BE21FA22E100084E93 /* Resources */,
@@ -280,6 +306,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FEDEF788F590BF93C86D8165 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vocapture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A754A9BC21FA22E100084E93 /* Sources */ = {
@@ -465,6 +516,7 @@
 		};
 		A754A9E921FA22E300084E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53A3C640F611B9BC8C6C0B89 /* Pods-Vocapture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +536,7 @@
 		};
 		A754A9EA21FA22E300084E93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4720834E40E09E943549DE21 /* Pods-Vocapture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
