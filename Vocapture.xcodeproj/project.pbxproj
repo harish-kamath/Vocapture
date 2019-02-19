@@ -19,6 +19,7 @@
 		A754A9F721FA267A00084E93 /* ModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F621FA267A00084E93 /* ModuleVC.swift */; };
 		A754A9F921FA268600084E93 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F821FA268600084E93 /* SettingsVC.swift */; };
 		A7674C4B220A430A00E3A7AC /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7674C4A220A430A00E3A7AC /* ItemDetailVC.swift */; };
+		A78CA1CA221CC45600918D06 /* yolo_v3_1080p.mov in Resources */ = {isa = PBXBuildFile; fileRef = A78CA1C9221CC45600918D06 /* yolo_v3_1080p.mov */; };
 		A7B09EDC221CBA6B00A4A8BA /* GTProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ECE221CBA6B00A4A8BA /* GTProgressBar.swift */; };
 		A7B09EDD221CBA6B00A4A8BA /* HorizontalLabelPositionFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ECF221CBA6B00A4A8BA /* HorizontalLabelPositionFrameCalculator.swift */; };
 		A7B09EDE221CBA6B00A4A8BA /* FrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ED0221CBA6B00A4A8BA /* FrameCalculator.swift */; };
@@ -69,6 +70,7 @@
 		A754A9F621FA267A00084E93 /* ModuleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleVC.swift; sourceTree = "<group>"; };
 		A754A9F821FA268600084E93 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		A7674C4A220A430A00E3A7AC /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
+		A78CA1C9221CC45600918D06 /* yolo_v3_1080p.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = yolo_v3_1080p.mov; sourceTree = "<group>"; };
 		A7B09ECC221CBA6B00A4A8BA /* GTProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTProgressBar.h; sourceTree = "<group>"; };
 		A7B09ECE221CBA6B00A4A8BA /* GTProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBar.swift; sourceTree = "<group>"; };
 		A7B09ECF221CBA6B00A4A8BA /* HorizontalLabelPositionFrameCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLabelPositionFrameCalculator.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		A754A9B721FA22E100084E93 = {
 			isa = PBXGroup;
 			children = (
+				A78CA1C9221CC45600918D06 /* yolo_v3_1080p.mov */,
 				A754A9C221FA22E100084E93 /* Vocapture */,
 				A754A9D721FA22E300084E93 /* VocaptureTests */,
 				A754A9E221FA22E300084E93 /* VocaptureUITests */,
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A754A9CE21FA22E300084E93 /* LaunchScreen.storyboard in Resources */,
+				A78CA1CA221CC45600918D06 /* yolo_v3_1080p.mov in Resources */,
 				A7B09EE0221CBA6B00A4A8BA /* .gitkeep in Resources */,
 				A754A9CB21FA22E300084E93 /* Assets.xcassets in Resources */,
 				A754A9C921FA22E100084E93 /* Main.storyboard in Resources */,
