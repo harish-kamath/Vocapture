@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15D04BAE826B50912FBE98B1 /* libPods-Vocapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95475231DC0805867A005737 /* libPods-Vocapture.a */; };
 		A754A9C421FA22E100084E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9C321FA22E100084E93 /* AppDelegate.swift */; };
 		A754A9C621FA22E100084E93 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9C521FA22E100084E93 /* LoginVC.swift */; };
 		A754A9C921FA22E100084E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754A9C721FA22E100084E93 /* Main.storyboard */; settings = {ASSET_TAGS = (loginMainView, ); }; };
@@ -20,7 +19,17 @@
 		A754A9F721FA267A00084E93 /* ModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F621FA267A00084E93 /* ModuleVC.swift */; };
 		A754A9F921FA268600084E93 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F821FA268600084E93 /* SettingsVC.swift */; };
 		A7674C4B220A430A00E3A7AC /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7674C4A220A430A00E3A7AC /* ItemDetailVC.swift */; };
-		CFE09A11220CF37E00DBED65 /* yolo_v3_1080p.mov in Resources */ = {isa = PBXBuildFile; fileRef = CFE09A10220CF37E00DBED65 /* yolo_v3_1080p.mov */; };
+		A7B09EDC221CBA6B00A4A8BA /* GTProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ECE221CBA6B00A4A8BA /* GTProgressBar.swift */; };
+		A7B09EDD221CBA6B00A4A8BA /* HorizontalLabelPositionFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ECF221CBA6B00A4A8BA /* HorizontalLabelPositionFrameCalculator.swift */; };
+		A7B09EDE221CBA6B00A4A8BA /* FrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ED0221CBA6B00A4A8BA /* FrameCalculator.swift */; };
+		A7B09EDF221CBA6B00A4A8BA /* GTProgressBarLabelPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ED1221CBA6B00A4A8BA /* GTProgressBarLabelPosition.swift */; };
+		A7B09EE0221CBA6B00A4A8BA /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = A7B09ED2221CBA6B00A4A8BA /* .gitkeep */; };
+		A7B09EE1221CBA6B00A4A8BA /* GTProgressBarDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ED3221CBA6B00A4A8BA /* GTProgressBarDirection.swift */; };
+		A7B09EE2221CBA6B00A4A8BA /* VerticalLabelPositionFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ED4221CBA6B00A4A8BA /* VerticalLabelPositionFrameCalculator.swift */; };
+		A7B09EE3221CBA6B00A4A8BA /* GTProgressBarCornerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ED5221CBA6B00A4A8BA /* GTProgressBarCornerType.swift */; };
+		A7B09EE4221CBA6B00A4A8BA /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ED6221CBA6B00A4A8BA /* UIViewExtensions.swift */; };
+		A7B09EE5221CBA6B00A4A8BA /* GTProgressBarOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ED7221CBA6B00A4A8BA /* GTProgressBarOrientation.swift */; };
+		A7B09EE6221CBA6B00A4A8BA /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ED8221CBA6B00A4A8BA /* UILabelExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4720834E40E09E943549DE21 /* Pods-Vocapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocapture.release.xcconfig"; path = "Target Support Files/Pods-Vocapture/Pods-Vocapture.release.xcconfig"; sourceTree = "<group>"; };
-		53A3C640F611B9BC8C6C0B89 /* Pods-Vocapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocapture.debug.xcconfig"; path = "Target Support Files/Pods-Vocapture/Pods-Vocapture.debug.xcconfig"; sourceTree = "<group>"; };
 		95475231DC0805867A005737 /* libPods-Vocapture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vocapture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754A9C021FA22E100084E93 /* Vocapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754A9C321FA22E100084E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +69,18 @@
 		A754A9F621FA267A00084E93 /* ModuleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleVC.swift; sourceTree = "<group>"; };
 		A754A9F821FA268600084E93 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		A7674C4A220A430A00E3A7AC /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
-		CFE09A10220CF37E00DBED65 /* yolo_v3_1080p.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = yolo_v3_1080p.mov; sourceTree = "<group>"; };
+		A7B09ECC221CBA6B00A4A8BA /* GTProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTProgressBar.h; sourceTree = "<group>"; };
+		A7B09ECE221CBA6B00A4A8BA /* GTProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBar.swift; sourceTree = "<group>"; };
+		A7B09ECF221CBA6B00A4A8BA /* HorizontalLabelPositionFrameCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLabelPositionFrameCalculator.swift; sourceTree = "<group>"; };
+		A7B09ED0221CBA6B00A4A8BA /* FrameCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameCalculator.swift; sourceTree = "<group>"; };
+		A7B09ED1221CBA6B00A4A8BA /* GTProgressBarLabelPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBarLabelPosition.swift; sourceTree = "<group>"; };
+		A7B09ED2221CBA6B00A4A8BA /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A7B09ED3221CBA6B00A4A8BA /* GTProgressBarDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBarDirection.swift; sourceTree = "<group>"; };
+		A7B09ED4221CBA6B00A4A8BA /* VerticalLabelPositionFrameCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalLabelPositionFrameCalculator.swift; sourceTree = "<group>"; };
+		A7B09ED5221CBA6B00A4A8BA /* GTProgressBarCornerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBarCornerType.swift; sourceTree = "<group>"; };
+		A7B09ED6221CBA6B00A4A8BA /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		A7B09ED7221CBA6B00A4A8BA /* GTProgressBarOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBarOrientation.swift; sourceTree = "<group>"; };
+		A7B09ED8221CBA6B00A4A8BA /* UILabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +88,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15D04BAE826B50912FBE98B1 /* libPods-Vocapture.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,25 +116,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		53FC0584E131184FCC7C83D5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				53A3C640F611B9BC8C6C0B89 /* Pods-Vocapture.debug.xcconfig */,
-				4720834E40E09E943549DE21 /* Pods-Vocapture.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		A754A9B721FA22E100084E93 = {
 			isa = PBXGroup;
 			children = (
-				CFE09A10220CF37E00DBED65 /* yolo_v3_1080p.mov */,
 				A754A9C221FA22E100084E93 /* Vocapture */,
 				A754A9D721FA22E300084E93 /* VocaptureTests */,
 				A754A9E221FA22E300084E93 /* VocaptureUITests */,
 				A754A9C121FA22E100084E93 /* Products */,
-				53FC0584E131184FCC7C83D5 /* Pods */,
 				52DD6BE7BEB7CAB8BC877789 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 		A754A9C221FA22E100084E93 /* Vocapture */ = {
 			isa = PBXGroup;
 			children = (
+				A7B09ECB221CBA6B00A4A8BA /* GTProgressBar */,
 				A754A9F521FA263E00084E93 /* View Controllers */,
 				A754A9C321FA22E100084E93 /* AppDelegate.swift */,
 				A754A9C721FA22E100084E93 /* Main.storyboard */,
@@ -176,6 +182,41 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		A7B09ECB221CBA6B00A4A8BA /* GTProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				A7B09ECC221CBA6B00A4A8BA /* GTProgressBar.h */,
+				A7B09ECD221CBA6B00A4A8BA /* Classes */,
+				A7B09ED9221CBA6B00A4A8BA /* Assets */,
+			);
+			path = GTProgressBar;
+			sourceTree = "<group>";
+		};
+		A7B09ECD221CBA6B00A4A8BA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A7B09ECE221CBA6B00A4A8BA /* GTProgressBar.swift */,
+				A7B09ECF221CBA6B00A4A8BA /* HorizontalLabelPositionFrameCalculator.swift */,
+				A7B09ED0221CBA6B00A4A8BA /* FrameCalculator.swift */,
+				A7B09ED1221CBA6B00A4A8BA /* GTProgressBarLabelPosition.swift */,
+				A7B09ED2221CBA6B00A4A8BA /* .gitkeep */,
+				A7B09ED3221CBA6B00A4A8BA /* GTProgressBarDirection.swift */,
+				A7B09ED4221CBA6B00A4A8BA /* VerticalLabelPositionFrameCalculator.swift */,
+				A7B09ED5221CBA6B00A4A8BA /* GTProgressBarCornerType.swift */,
+				A7B09ED6221CBA6B00A4A8BA /* UIViewExtensions.swift */,
+				A7B09ED7221CBA6B00A4A8BA /* GTProgressBarOrientation.swift */,
+				A7B09ED8221CBA6B00A4A8BA /* UILabelExtensions.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A7B09ED9221CBA6B00A4A8BA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,7 +224,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A754A9E821FA22E300084E93 /* Build configuration list for PBXNativeTarget "Vocapture" */;
 			buildPhases = (
-				FEDEF788F590BF93C86D8165 /* [CP] Check Pods Manifest.lock */,
 				A754A9BC21FA22E100084E93 /* Sources */,
 				A754A9BD21FA22E100084E93 /* Frameworks */,
 				A754A9BE21FA22E100084E93 /* Resources */,
@@ -284,8 +324,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE09A11220CF37E00DBED65 /* yolo_v3_1080p.mov in Resources */,
 				A754A9CE21FA22E300084E93 /* LaunchScreen.storyboard in Resources */,
+				A7B09EE0221CBA6B00A4A8BA /* .gitkeep in Resources */,
 				A754A9CB21FA22E300084E93 /* Assets.xcassets in Resources */,
 				A754A9C921FA22E100084E93 /* Main.storyboard in Resources */,
 			);
@@ -307,43 +347,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		FEDEF788F590BF93C86D8165 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Vocapture-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		A754A9BC21FA22E100084E93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A754A9F421FA263700084E93 /* LearningVC.swift in Sources */,
+				A7B09EE4221CBA6B00A4A8BA /* UIViewExtensions.swift in Sources */,
+				A7B09EE1221CBA6B00A4A8BA /* GTProgressBarDirection.swift in Sources */,
 				A754A9C621FA22E100084E93 /* LoginVC.swift in Sources */,
+				A7B09EE6221CBA6B00A4A8BA /* UILabelExtensions.swift in Sources */,
+				A7B09EE2221CBA6B00A4A8BA /* VerticalLabelPositionFrameCalculator.swift in Sources */,
 				A754A9F221FA261200084E93 /* CameraVC.swift in Sources */,
+				A7B09EDF221CBA6B00A4A8BA /* GTProgressBarLabelPosition.swift in Sources */,
+				A7B09EE3221CBA6B00A4A8BA /* GTProgressBarCornerType.swift in Sources */,
+				A7B09EDC221CBA6B00A4A8BA /* GTProgressBar.swift in Sources */,
 				A7674C4B220A430A00E3A7AC /* ItemDetailVC.swift in Sources */,
+				A7B09EE5221CBA6B00A4A8BA /* GTProgressBarOrientation.swift in Sources */,
+				A7B09EDE221CBA6B00A4A8BA /* FrameCalculator.swift in Sources */,
 				A754A9F721FA267A00084E93 /* ModuleVC.swift in Sources */,
 				A754A9C421FA22E100084E93 /* AppDelegate.swift in Sources */,
 				A754A9F921FA268600084E93 /* SettingsVC.swift in Sources */,
+				A7B09EDD221CBA6B00A4A8BA /* HorizontalLabelPositionFrameCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +541,6 @@
 		};
 		A754A9E921FA22E300084E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53A3C640F611B9BC8C6C0B89 /* Pods-Vocapture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,7 +560,6 @@
 		};
 		A754A9EA21FA22E300084E93 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4720834E40E09E943549DE21 /* Pods-Vocapture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

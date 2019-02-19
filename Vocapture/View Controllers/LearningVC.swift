@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import GTProgressBar
 
 class LearningVC: UIViewController {
     @IBOutlet var wordsLearned: UIButton!
