@@ -16,6 +16,8 @@ class CameraVC: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var SettingsButton: UIButton!
     @IBOutlet weak var InfoButton: UIButton!
     @IBOutlet weak var sceneView: ARSCNView!
+    @IBOutlet weak var modeButton: UIButton!
+    var animView:UIView!
     
     var node: SCNNode?
     
@@ -23,6 +25,11 @@ class CameraVC: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         sceneView.delegate = self
+        
+        animView = UIView(frame: CGRect(x: modeButton.frame.midX, y: modeButton.frame.midY, width: 0, height: 0))
+        animView.layer.cornerRadius = self.view.frame.width/2
+        animView.backgroundColor = UIColor.purple.withAlphaComponent(0.3)
+        self.view.addSubview(animView)
 
         // Do any additional setup after loading the view.
     }
@@ -120,6 +127,27 @@ class CameraVC: UIViewController, ARSCNViewDelegate {
             }, completion: nil)
             
         }
+    }
+    
+    @IBAction func changeMode(){
+        if(animView.backgroundColor == UIColor.purple.withAlphaComponent(0.3)){
+            animView.backgroundColor = UIColor.green.withAlphaComponent(0.3)
+            modeButton.setImage(UIImage(named: "ToolModeIcon"), for: .normal)
+        }
+        else{
+            animView.backgroundColor = UIColor.purple.withAlphaComponent(0.3)
+            modeButton.setImage(UIImage(named: "LearningModeIcon"), for: .normal)
+        }
+        UIView.animate(withDuration: 0.5, delay: 0.5, options: .curveEaseOut, animations: {
+            self.animView.frame = CGRect(x: -self.view.frame.width/2, y: -self.view.frame.height/2, width: self.view.frame.width*2, height: self.view.frame.height*2)
+        }, completion: {finished in
+            UIView.animate(withDuration: 0.5, delay: 0.2, options: .curveLinear, animations: {
+                self.animView.alpha = 0
+            }, completion: {finished in
+                self.animView.alpha = 1
+                self.animView.frame = CGRect(x: self.modeButton.frame.midX, y: self.modeButton.frame.midY, width: 0, height: 0)
+            })
+        })
     }
     
     
