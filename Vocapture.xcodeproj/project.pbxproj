@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68DB960B222595BC001F835A /* WordsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB960A222595BC001F835A /* WordsCell.swift */; };
+		68DB960D22259B6A001F835A /* ModulesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB960C22259B6A001F835A /* ModulesCell.swift */; };
 		A754A9C421FA22E100084E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9C321FA22E100084E93 /* AppDelegate.swift */; };
 		A754A9C621FA22E100084E93 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9C521FA22E100084E93 /* LoginVC.swift */; };
 		A754A9C921FA22E100084E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A754A9C721FA22E100084E93 /* Main.storyboard */; settings = {ASSET_TAGS = (loginMainView, ); }; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68DB960A222595BC001F835A /* WordsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCell.swift; sourceTree = "<group>"; };
+		68DB960C22259B6A001F835A /* ModulesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesCell.swift; sourceTree = "<group>"; };
 		95475231DC0805867A005737 /* libPods-Vocapture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vocapture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754A9C021FA22E100084E93 /* Vocapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754A9C321FA22E100084E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				A754A9F521FA263E00084E93 /* View Controllers */,
 				A754A9C321FA22E100084E93 /* AppDelegate.swift */,
 				A754A9C721FA22E100084E93 /* Main.storyboard */,
+				68DB960C22259B6A001F835A /* ModulesCell.swift */,
+				68DB960A222595BC001F835A /* WordsCell.swift */,
 				A754A9CA21FA22E300084E93 /* Assets.xcassets */,
 				A754A9CC21FA22E300084E93 /* LaunchScreen.storyboard */,
 				A754A9CF21FA22E300084E93 /* Info.plist */,
@@ -370,7 +376,9 @@
 				A7B09EE5221CBA6B00A4A8BA /* GTProgressBarOrientation.swift in Sources */,
 				A7B09EDE221CBA6B00A4A8BA /* FrameCalculator.swift in Sources */,
 				A754A9F721FA267A00084E93 /* ModuleVC.swift in Sources */,
+				68DB960D22259B6A001F835A /* ModulesCell.swift in Sources */,
 				A754A9C421FA22E100084E93 /* AppDelegate.swift in Sources */,
+				68DB960B222595BC001F835A /* WordsCell.swift in Sources */,
 				A754A9F921FA268600084E93 /* SettingsVC.swift in Sources */,
 				A7B09EDD221CBA6B00A4A8BA /* HorizontalLabelPositionFrameCalculator.swift in Sources */,
 			);

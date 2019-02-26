@@ -8,12 +8,29 @@
 
 import UIKit
 
-class ModuleVC: UIViewController {
+class ModuleVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet var tableView:UITableView!
+    @IBOutlet weak var language1 : UILabel!
+    @IBOutlet weak var language2 : UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : WordsCell = tableView.dequeueReusableCell(withIdentifier: "wordscell", for: indexPath) as! WordsCell
+        cell.lang1.text = "Hello World!"
+        cell.lang2.text = "Hello World!"
+        return cell
     }
     
 
