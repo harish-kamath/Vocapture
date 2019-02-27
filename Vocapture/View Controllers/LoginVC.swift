@@ -23,10 +23,10 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
-        setupView()
+        setupVieww()
     }
     
-    func setupView() {
+    func setupVieww() {
         let path = URL(fileURLWithPath: Bundle.main.path(forResource: "yolo_v3_1080p", ofType: "mov")!)
         let player = AVPlayer(url: path)
         let newLayer = AVPlayerLayer(player: player)
