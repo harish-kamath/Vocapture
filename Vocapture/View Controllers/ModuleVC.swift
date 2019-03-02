@@ -50,6 +50,7 @@ class ModuleVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             elem.w = word
             self.searchable.append(elem)
         }
+        
         tableView.reloadData()
     }
     

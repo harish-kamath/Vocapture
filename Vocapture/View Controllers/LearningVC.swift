@@ -28,6 +28,7 @@ class LearningVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         "Shopping" : ["backpack", "umbrella", "handbag", "tie", "vase", "bottle", "wine", "glass", "cup", "fork", "knife", "spoon", "bowl"],
         "Vehicles" : ["bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat"],
     ]
+    var logoImages: [UIImage] = [#imageLiteral(resourceName: "school"),#imageLiteral(resourceName: "kitchen.svg.png"),#imageLiteral(resourceName: "office.svg.png"), #imageLiteral(resourceName: "household.svg.png"),#imageLiteral(resourceName: "food.svg.png"),#imageLiteral(resourceName: "bathroom.svg.png"),#imageLiteral(resourceName: "recreation.svg.png"), #imageLiteral(resourceName: "animals.svg.png"),#imageLiteral(resourceName: "furniture.svg.png"),#imageLiteral(resourceName: "signals.svg.png"), #imageLiteral(resourceName: "technology.svg.png"),#imageLiteral(resourceName: "shopping.svg.png"),#imageLiteral(resourceName: "vehicle.svg.png")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,7 @@ class LearningVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : ModulesCell = tableView.dequeueReusableCell(withIdentifier: "modulescell", for: indexPath) as! ModulesCell
         cell.labelText.text = searchable[indexPath.row].mod.name
+        cell.ig.image = searchable[indexPath.row].img.curr_image
         cell.progressBar.progress = 0
 //        cell.progressBar.animateTo(progress: 0.9)
         cell.progressBar.barBorderColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
@@ -69,6 +71,14 @@ class LearningVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             elem.mod = module
             self.searchable.append(elem)
         }
+        
+        for each in logoImages {
+            let image = Image()
+            image.curr_image = each
+            let elem = Searchable()
+            elem.img = image
+            self.searchable.append(elem)
+        }
         tableView.reloadData()
     }
     
@@ -76,8 +86,13 @@ class LearningVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         var name : String?
     }
     
+    class Image {
+        var curr_image : UIImage?
+    }
+    
     class Searchable {
         var mod = Module()
+        var img = Image()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
