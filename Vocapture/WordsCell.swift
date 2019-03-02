@@ -11,7 +11,6 @@ import UIKit
 class WordsCell: UITableViewCell {
     
     @IBOutlet var lang1 : UILabel!
-    @IBOutlet var lang2 : UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

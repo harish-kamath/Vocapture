@@ -11,27 +11,70 @@ import UIKit
 class ModuleVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableView:UITableView!
-    @IBOutlet weak var language1 : UILabel!
-    @IBOutlet weak var language2 : UILabel!
+    @IBOutlet weak var moduleName: UILabel!
+    
+    var name:String?
+    var words:[String]?
+    var searchable = [Searchable]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        
+        moduleName.text = name
+        populate_cells()
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return words!.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : WordsCell = tableView.dequeueReusableCell(withIdentifier: "wordscell", for: indexPath) as! WordsCell
-        cell.lang1.text = "Hello World!"
-        cell.lang2.text = "Hello World!"
+        cell.lang1.text = searchable[indexPath.row].w.name?.capitalized
         return cell
     }
+    
+    func populate_cells() {
+        for each in words! {
+            let word = Words()
+            word.name = each
+            let elem = Searchable()
+            elem.w = word
+            self.searchable.append(elem)
+        }
+        tableView.reloadData()
+    }
+    
+    class UnderlinedLabel: UILabel {
+        
+        override var text: String? {
+            didSet {
+                guard let text = text else { return }
+                let textRange = NSMakeRange(0, text.count)
+                let attributedText = NSMutableAttributedString(string: text)
+                attributedText.addAttribute(NSAttributedString.Key.underlineStyle , value: NSUnderlineStyle.single.rawValue, range: textRange)
+                // Add other attributes if needed
+                self.attributedText = attributedText
+            }
+        }
+    }
+    
+    class Words {
+        var name : String?
+    }
+    
+    class Searchable {
+        var w = Words()
+    }
+    
     
 
     /*
