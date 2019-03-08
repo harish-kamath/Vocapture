@@ -17,8 +17,8 @@
 		A754A9D921FA22E300084E93 /* VocaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9D821FA22E300084E93 /* VocaptureTests.swift */; };
 		A754A9E421FA22E300084E93 /* VocaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9E321FA22E300084E93 /* VocaptureUITests.swift */; };
 		A754A9F221FA261200084E93 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F121FA261200084E93 /* CameraVC.swift */; };
-		A754A9F421FA263700084E93 /* LearningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F321FA263700084E93 /* LearningVC.swift */; };
-		A754A9F721FA267A00084E93 /* ModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F621FA267A00084E93 /* ModuleVC.swift */; };
+		A754A9F421FA263700084E93 /* LensTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F321FA263700084E93 /* LensTVC.swift */; };
+		A754A9F721FA267A00084E93 /* LensDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F621FA267A00084E93 /* LensDetailVC.swift */; };
 		A754A9F921FA268600084E93 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754A9F821FA268600084E93 /* SettingsVC.swift */; };
 		A7674C4B220A430A00E3A7AC /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7674C4A220A430A00E3A7AC /* ItemDetailVC.swift */; };
 		A78CA1CA221CC45600918D06 /* yolo_v3_1080p.mov in Resources */ = {isa = PBXBuildFile; fileRef = A78CA1C9221CC45600918D06 /* yolo_v3_1080p.mov */; };
@@ -70,8 +70,8 @@
 		A754A9E321FA22E300084E93 /* VocaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocaptureUITests.swift; sourceTree = "<group>"; };
 		A754A9E521FA22E300084E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A754A9F121FA261200084E93 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
-		A754A9F321FA263700084E93 /* LearningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningVC.swift; sourceTree = "<group>"; };
-		A754A9F621FA267A00084E93 /* ModuleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleVC.swift; sourceTree = "<group>"; };
+		A754A9F321FA263700084E93 /* LensTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensTVC.swift; sourceTree = "<group>"; };
+		A754A9F621FA267A00084E93 /* LensDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensDetailVC.swift; sourceTree = "<group>"; };
 		A754A9F821FA268600084E93 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		A7674C4A220A430A00E3A7AC /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
 		A78CA1C9221CC45600918D06 /* yolo_v3_1080p.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = yolo_v3_1080p.mov; sourceTree = "<group>"; };
@@ -184,8 +184,8 @@
 				A754A9C521FA22E100084E93 /* LoginVC.swift */,
 				A754A9F121FA261200084E93 /* CameraVC.swift */,
 				A7674C4A220A430A00E3A7AC /* ItemDetailVC.swift */,
-				A754A9F321FA263700084E93 /* LearningVC.swift */,
-				A754A9F621FA267A00084E93 /* ModuleVC.swift */,
+				A754A9F321FA263700084E93 /* LensTVC.swift */,
+				A754A9F621FA267A00084E93 /* LensDetailVC.swift */,
 				A754A9F821FA268600084E93 /* SettingsVC.swift */,
 			);
 			path = "View Controllers";
@@ -362,7 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A754A9F421FA263700084E93 /* LearningVC.swift in Sources */,
+				A754A9F421FA263700084E93 /* LensTVC.swift in Sources */,
 				A7B09EE4221CBA6B00A4A8BA /* UIViewExtensions.swift in Sources */,
 				A7B09EE1221CBA6B00A4A8BA /* GTProgressBarDirection.swift in Sources */,
 				A754A9C621FA22E100084E93 /* LoginVC.swift in Sources */,
@@ -375,7 +375,7 @@
 				A7674C4B220A430A00E3A7AC /* ItemDetailVC.swift in Sources */,
 				A7B09EE5221CBA6B00A4A8BA /* GTProgressBarOrientation.swift in Sources */,
 				A7B09EDE221CBA6B00A4A8BA /* FrameCalculator.swift in Sources */,
-				A754A9F721FA267A00084E93 /* ModuleVC.swift in Sources */,
+				A754A9F721FA267A00084E93 /* LensDetailVC.swift in Sources */,
 				68DB960D22259B6A001F835A /* ModulesCell.swift in Sources */,
 				A754A9C421FA22E100084E93 /* AppDelegate.swift in Sources */,
 				68DB960B222595BC001F835A /* WordsCell.swift in Sources */,

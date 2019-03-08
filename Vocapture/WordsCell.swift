@@ -11,6 +11,8 @@ import UIKit
 class WordsCell: UITableViewCell {
     
     @IBOutlet var lang1 : UILabel!
+    @IBOutlet var lang2 : UILabel!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +21,7 @@ class WordsCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        
 
         // Configure the view for the selected state
     }

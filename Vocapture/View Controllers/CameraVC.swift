@@ -9,6 +9,22 @@
 import UIKit
 import ARKit
 
+public var lenses = [
+    "School" : ["person", "bicycle", "backpack", "book", "scissors", "clock", "cell phone",        "keyboard", "laptop", "chair", "dining table", "handbag", "umbrella", "bottle"],
+    "Kitchen" : ["bottle", "person", "wine glass", "cup", "fork", "knife", "spoon", "bowl", "chair", "couch", "potted plant", "dining table", "microwave", "oven", "toaster", "sink", "refrigerator", "vase"],
+    "Office" : ["person", "backpack", "clock", "cell phone", "keyboard", "laptop", "chair", "dining table", "handbag", "umbrella", "tie", "suitcase"],
+    "Household" : ["microwave", "oven", "toaster", "sink", "refrigerator", "chair", "couch", "potted plant", "bed", "dining table", "toilet"],
+    "Food" : ["banana", "apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake"],
+    "Bathroom" : ["hair drier", "toothbrush", "toilet", "sink", "potted plant"],
+    "Recreation" : ["frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat", "baseball", "glove", "skateboard", "surfboard", "tennis racket"],
+    "Animals" : ["bird", "cat", "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe"],
+    "Furniture" : ["chair", "couch", "potted plant", "bed", "dining table", "toilet", "microwave", "oven", "toaster", "sink", "refrigerator"],
+    "Signals" : ["traffic light", "fire hydrant", "stop sign", "parking meter", "bench"],
+    "Technology" : ["tv", "laptop", "mouse", "remote", "keyboard", "cell phone"],
+    "Shopping" : ["backpack", "umbrella", "handbag", "tie", "vase", "bottle", "wine", "glass", "cup", "fork", "knife", "spoon", "bowl"],
+    "Vehicles" : ["bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat"],
+]
+
 class CameraVC: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet weak var LearningButton: UIButton!
