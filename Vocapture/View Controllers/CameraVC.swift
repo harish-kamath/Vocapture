@@ -12,6 +12,22 @@ import CoreML
 import Vision
 import Accelerate
 
+public var lenses = [
+    "School" : ["person", "bicycle", "backpack", "book", "scissors", "clock", "cell phone", "keyboard", "laptop", "chair", "dining table", "handbag", "umbrella", "bottle"],
+    "Kitchen" : ["bottle", "person", "wine glass", "cup", "fork", "knife", "spoon", "bowl", "chair", "couch", "potted plant", "dining table", "microwave", "oven", "toaster", "sink", "refrigerator", "vase"],
+    "Office" : ["person", "backpack", "clock", "cell phone", "keyboard", "laptop", "chair", "dining table", "handbag", "umbrella", "tie", "suitcase"],
+    "Household" : ["microwave", "oven", "toaster", "sink", "refrigerator", "chair", "couch", "potted plant", "bed", "dining table", "toilet"],
+    "Food" : ["banana", "apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake"],
+    "Bathroom" : ["hair drier", "toothbrush", "toilet", "sink", "potted plant"],
+    "Recreation" : ["frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat", "baseball", "glove", "skateboard", "surfboard", "tennis racket"],
+    "Animals" : ["bird", "cat", "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe"],
+    "Furniture" : ["chair", "couch", "potted plant", "bed", "dining table", "toilet", "microwave", "oven", "toaster", "sink", "refrigerator"],
+    "Signals" : ["traffic light", "fire hydrant", "stop sign", "parking meter", "bench"],
+    "Technology" : ["tv", "laptop", "mouse", "remote", "keyboard", "cell phone"],
+    "Shopping" : ["backpack", "umbrella", "handbag", "tie", "vase", "bottle", "wine", "glass", "cup", "fork", "knife", "spoon", "bowl"],
+    "Vehicles" : ["bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat"],
+]
+
 class CameraVC: UIViewController, ARSCNViewDelegate,UIGestureRecognizerDelegate,ARSessionDelegate,AVCaptureVideoDataOutputSampleBufferDelegate {
 
     @IBOutlet weak var LearningButton: UIButton!
@@ -22,6 +38,8 @@ class CameraVC: UIViewController, ARSCNViewDelegate,UIGestureRecognizerDelegate,
     @IBOutlet weak var SettingsIconLabel: UILabel!
     @IBOutlet weak var InfoButton: UIButton!
     
+    @IBOutlet weak var LensButton: UIButton!
+    
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var cameraView: UIView!
     
@@ -29,9 +47,9 @@ class CameraVC: UIViewController, ARSCNViewDelegate,UIGestureRecognizerDelegate,
     @IBOutlet weak var modeUpdateLabel: UILabel!
     var animView:UIView!
     
-    var detectingWords:[String] = ["person"]
+    var detectingWords:[String] = lenses[UserDefaults.standard.string(forKey: "VCPLens")!]!
     
-    var lang = Language(name: "Spanish", abbreviation: "es")
+    var lang = Language(dictionary: UserDefaults.standard.object(forKey: "VCPLang") as! [String : String])!
     let languages = [Language(name: "English", abbreviation: "en"),Language(name: "Irish", abbreviation: "ga"), Language(name: "Italian", abbreviation: "it"), Language(name: "Spanish", abbreviation: "es"), Language(name: "German", abbreviation: "de"), Language(name: "Turkish", abbreviation: "tr"), Language(name: "Vietnamese", abbreviation: "vi"), Language(name: "Swahili", abbreviation: "sw"), Language(name: "Portuguese", abbreviation: "pt")]
     var words: [String: Int] = [:]
     
@@ -69,10 +87,20 @@ class CameraVC: UIViewController, ARSCNViewDelegate,UIGestureRecognizerDelegate,
     
     var node: SCNNode?
     
+    @IBAction func lensClicked(){
+        let LDVC = storyboard?.instantiateViewController(withIdentifier: "moduleView") as! LensDetailVC
+        LDVC.name = UserDefaults.standard.string(forKey: "VCPLens")!
+        LDVC.words = lenses[LDVC.name!]
+        self.present(UINavigationController(rootViewController: LDVC), animated: true, completion: nil)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let iN = UserDefaults.standard.string(forKey: "VCPLens")!.lowercased()
+        let i = UIImage(named: iN)
         
+        LensButton.setImage(i, for: .normal)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
         tap.delegate = self // This is not required
@@ -113,6 +141,11 @@ class CameraVC: UIViewController, ARSCNViewDelegate,UIGestureRecognizerDelegate,
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        let iN = UserDefaults.standard.string(forKey: "VCPLens")!.lowercased()
+        let i = UIImage(named: iN)
+        
+        LensButton.setImage(i, for: .normal)
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
@@ -193,6 +226,7 @@ class CameraVC: UIViewController, ARSCNViewDelegate,UIGestureRecognizerDelegate,
                 print(self.ssdPostProcessor.classNames![p.detectedClass])
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let controller = storyboard.instantiateViewController(withIdentifier: "labelChooser") as! HandWritingVC
+                
                 controller.label = self.ssdPostProcessor.classNames![p.detectedClass]
                 self.present(controller, animated: true, completion: {
                     print("Done")
@@ -258,7 +292,7 @@ class CameraVC: UIViewController, ARSCNViewDelegate,UIGestureRecognizerDelegate,
     
     @IBAction func changeMode(){
         var modeImg:UIImage = UIImage()
-        if(animView.backgroundColor == UIColor.purple.withAlphaComponent(0.6)){
+        if(isExploring){
             animView.backgroundColor = UIColor.blue.withAlphaComponent(0.6)
             modeImg = UIImage(named: "LearningModeIcon")!
             modeUpdateLabel.text = "Learning"
@@ -312,6 +346,7 @@ class CameraVC: UIViewController, ARSCNViewDelegate,UIGestureRecognizerDelegate,
                 for l in self.languages{
                     if(l.name == values[i].title){
                         self.lang = l
+                        UserDefaults.standard.set(l.propertyListRepresentation, forKey: "VCPLang")
                     }
                 }
             }

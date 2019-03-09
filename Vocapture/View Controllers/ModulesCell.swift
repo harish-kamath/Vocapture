@@ -12,6 +12,7 @@ class ModulesCell: UITableViewCell {
 
     @IBOutlet weak var labelText: UILabel!
     @IBOutlet weak var progressBar: GTProgressBar!
+    @IBOutlet var ig: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

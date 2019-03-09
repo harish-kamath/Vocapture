@@ -12,10 +12,44 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        return true
+    }
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        //UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+        
         // Override point for customization after application launch.
+        let defaults = UserDefaults.standard
+        if(defaults.object(forKey: "VCPLang") == nil){
+            print("Set Language")
+            let l = Language(name:"Spanish", abbreviation: "es")
+            defaults.set(l.propertyListRepresentation, forKey: "VCPLang")
+        }
+        
+        if(defaults.object(forKey: "VCPLens") == nil){
+            print("Setting Lens")
+            defaults.set("School", forKey: "VCPLens")
+        }
+        
+        for lens in lenses{
+            for word in lens.value{
+                if(defaults.object(forKey: lens.key+"-"+word) == nil){
+                    defaults.set(0, forKey: lens.key+"-"+word)
+                }
+            }
+        }
+        
+        if(defaults.object(forKey: "unlockedLensCount") == nil){
+            print("Setting Lens Count")
+            defaults.set(3, forKey: "unlockedLensCount")
+        }
+        
+        
+        defaults.synchronize()
         return true
     }
 

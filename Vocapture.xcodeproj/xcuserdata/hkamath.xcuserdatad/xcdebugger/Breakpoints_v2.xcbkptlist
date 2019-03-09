@@ -10,13 +10,123 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Vocapture/View Controllers/CameraVC.swift"
-            timestampString = "573209736.562553"
+            timestampString = "573811215.490238"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "CameraVC"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Vocapture/View Controllers/CameraVC.swift"
+            timestampString = "573811215.490642"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Vocapture/View Controllers/CameraVC.swift"
+            timestampString = "573811215.490923"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Vocapture/View Controllers/CameraVC.swift"
+            timestampString = "573811215.4911849"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "CameraVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Vocapture.CameraVC.boundingBoxes.getter : Swift.Array&lt;Vocapture.BoundingBox&gt;"
+                  moduleName = "Vocapture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hkamath/Desktop/GTClasses/2018-9Spring/I2P/Vocapture/Vocapture/View%20Controllers/CameraVC.swift"
+                  timestampString = "573773942.013734"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Vocapture.CameraVC.boundingBoxes.setter : Swift.Array&lt;Vocapture.BoundingBox&gt;"
+                  moduleName = "Vocapture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hkamath/Desktop/GTClasses/2018-9Spring/I2P/Vocapture/Vocapture/View%20Controllers/CameraVC.swift"
+                  timestampString = "573773942.015276"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Vocapture.CameraVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Vocapture.CameraVC"
+                  moduleName = "Vocapture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hkamath/Desktop/GTClasses/2018-9Spring/I2P/Vocapture/Vocapture/View%20Controllers/CameraVC.swift"
+                  timestampString = "573773942.016763"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "4172">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Vocapture.CameraVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Vocapture.CameraVC&gt;"
+                  moduleName = "Vocapture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hkamath/Desktop/GTClasses/2018-9Spring/I2P/Vocapture/Vocapture/View%20Controllers/CameraVC.swift"
+                  timestampString = "573773942.0183229"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "4148">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

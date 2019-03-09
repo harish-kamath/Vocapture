@@ -35,10 +35,6 @@
 		A79D429E222A346F00D489D2 /* ComputerVisionOCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D429C222A346E00D489D2 /* ComputerVisionOCR.swift */; };
 		A79D42A0222A34CC00D489D2 /* ROGoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D429F222A34CC00D489D2 /* ROGoogleTranslate.swift */; };
 		A79D42A2222A351A00D489D2 /* Pencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D42A1222A351900D489D2 /* Pencil.swift */; };
-		A79D42A5222A70BE00D489D2 /* WordsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D42A3222A70BE00D489D2 /* WordsCell.swift */; };
-		A79D42A6222A70BE00D489D2 /* ModulesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D42A4222A70BE00D489D2 /* ModulesCell.swift */; };
-		A79D42A9222A70DE00D489D2 /* LearningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D42A7222A70DD00D489D2 /* LearningVC.swift */; };
-		A79D42AA222A70DE00D489D2 /* ModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D42A8222A70DE00D489D2 /* ModuleVC.swift */; };
 		A79D42AC222A717100D489D2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D42AB222A717100D489D2 /* LoginVC.swift */; };
 		A79D42B1222A71B500D489D2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79D42AD222A71B200D489D2 /* FBSDKCoreKit.framework */; };
 		A79D42B2222A71B500D489D2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79D42AE222A71B300D489D2 /* FBSDKShareKit.framework */; };
@@ -60,6 +56,11 @@
 		A7B09EE4221CBA6B00A4A8BA /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ED6221CBA6B00A4A8BA /* UIViewExtensions.swift */; };
 		A7B09EE5221CBA6B00A4A8BA /* GTProgressBarOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ED7221CBA6B00A4A8BA /* GTProgressBarOrientation.swift */; };
 		A7B09EE6221CBA6B00A4A8BA /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B09ED8221CBA6B00A4A8BA /* UILabelExtensions.swift */; };
+		A7B2E3C02233A3A900D07CAB /* levenshtein.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2E3BF2233A3A900D07CAB /* levenshtein.swift */; };
+		A7B31FB02233084D0058C48F /* LensDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B31FAE2233084C0058C48F /* LensDetailVC.swift */; };
+		A7B31FB12233084D0058C48F /* LensTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B31FAF2233084D0058C48F /* LensTVC.swift */; };
+		A7B31FB32233085C0058C48F /* ModulesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B31FB22233085B0058C48F /* ModulesCell.swift */; };
+		A7B31FB5223308680058C48F /* WordsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B31FB4223308680058C48F /* WordsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,10 +117,6 @@
 		A79D429D222A346E00D489D2 /* ComputerVisionOCR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerVisionOCR.h; sourceTree = "<group>"; };
 		A79D429F222A34CC00D489D2 /* ROGoogleTranslate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROGoogleTranslate.swift; sourceTree = "<group>"; };
 		A79D42A1222A351900D489D2 /* Pencil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pencil.swift; sourceTree = "<group>"; };
-		A79D42A3222A70BE00D489D2 /* WordsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsCell.swift; sourceTree = "<group>"; };
-		A79D42A4222A70BE00D489D2 /* ModulesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesCell.swift; sourceTree = "<group>"; };
-		A79D42A7222A70DD00D489D2 /* LearningVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningVC.swift; sourceTree = "<group>"; };
-		A79D42A8222A70DE00D489D2 /* ModuleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleVC.swift; sourceTree = "<group>"; };
 		A79D42AB222A717100D489D2 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A79D42AD222A71B200D489D2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		A79D42AE222A71B300D489D2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -143,6 +140,11 @@
 		A7B09ED6221CBA6B00A4A8BA /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		A7B09ED7221CBA6B00A4A8BA /* GTProgressBarOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTProgressBarOrientation.swift; sourceTree = "<group>"; };
 		A7B09ED8221CBA6B00A4A8BA /* UILabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
+		A7B2E3BF2233A3A900D07CAB /* levenshtein.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = levenshtein.swift; sourceTree = "<group>"; };
+		A7B31FAE2233084C0058C48F /* LensDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LensDetailVC.swift; sourceTree = "<group>"; };
+		A7B31FAF2233084D0058C48F /* LensTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LensTVC.swift; sourceTree = "<group>"; };
+		A7B31FB22233085B0058C48F /* ModulesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesCell.swift; sourceTree = "<group>"; };
+		A7B31FB4223308680058C48F /* WordsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,12 +273,12 @@
 				A79D4299222A341900D489D2 /* HandwritingVC.swift */,
 				A79D42AB222A717100D489D2 /* LoginVC.swift */,
 				A754A9F121FA261200084E93 /* CameraVC.swift */,
-				A79D42A7222A70DD00D489D2 /* LearningVC.swift */,
-				A79D42A8222A70DE00D489D2 /* ModuleVC.swift */,
 				A7674C4A220A430A00E3A7AC /* ItemDetailVC.swift */,
+				A7B31FAE2233084C0058C48F /* LensDetailVC.swift */,
+				A7B31FAF2233084D0058C48F /* LensTVC.swift */,
 				A754A9F821FA268600084E93 /* SettingsVC.swift */,
-				A79D42A4222A70BE00D489D2 /* ModulesCell.swift */,
-				A79D42A3222A70BE00D489D2 /* WordsCell.swift */,
+				A7B31FB22233085B0058C48F /* ModulesCell.swift */,
+				A7B31FB4223308680058C48F /* WordsCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -284,6 +286,7 @@
 		A79D429B222A346100D489D2 /* ServerConnection */ = {
 			isa = PBXGroup;
 			children = (
+				A7B2E3BF2233A3A900D07CAB /* levenshtein.swift */,
 				A79D42A1222A351900D489D2 /* Pencil.swift */,
 				A79D429F222A34CC00D489D2 /* ROGoogleTranslate.swift */,
 				A79D429D222A346E00D489D2 /* ComputerVisionOCR.h */,
@@ -498,31 +501,32 @@
 				A70CF3772227876700165ED5 /* Predictions.swift in Sources */,
 				A7B09EE2221CBA6B00A4A8BA /* VerticalLabelPositionFrameCalculator.swift in Sources */,
 				A70CF3742227876700165ED5 /* UIImage+CVPixelBuffer.swift in Sources */,
-				A79D42AA222A70DE00D489D2 /* ModuleVC.swift in Sources */,
 				A79D42A0222A34CC00D489D2 /* ROGoogleTranslate.swift in Sources */,
-				A79D42A5222A70BE00D489D2 /* WordsCell.swift in Sources */,
 				A79D42AC222A717100D489D2 /* LoginVC.swift in Sources */,
 				A70CF3792227876700165ED5 /* CVPixelBuffer+Helpers.swift in Sources */,
 				A754A9F221FA261200084E93 /* CameraVC.swift in Sources */,
 				A79D42C4222A7A1B00D489D2 /* TCPickerViewThemeType.swift in Sources */,
-				A79D42A6222A70BE00D489D2 /* ModulesCell.swift in Sources */,
 				A70CF3762227876700165ED5 /* BoundingBox.swift in Sources */,
 				A7B09EDF221CBA6B00A4A8BA /* GTProgressBarLabelPosition.swift in Sources */,
+				A7B31FB5223308680058C48F /* WordsCell.swift in Sources */,
 				A79D42A2222A351A00D489D2 /* Pencil.swift in Sources */,
 				A7B09EE3221CBA6B00A4A8BA /* GTProgressBarCornerType.swift in Sources */,
 				A70CF383222787B100165ED5 /* ssd_mobilenet_feature_extractor.mlmodel in Sources */,
 				A7B09EDC221CBA6B00A4A8BA /* GTProgressBar.swift in Sources */,
 				A70CF37B2227876700165ED5 /* MLMultiArray+Image.swift in Sources */,
+				A7B31FB02233084D0058C48F /* LensDetailVC.swift in Sources */,
 				A7674C4B220A430A00E3A7AC /* ItemDetailVC.swift in Sources */,
 				A70CF3732227876700165ED5 /* Math.swift in Sources */,
-				A79D42A9222A70DE00D489D2 /* LearningVC.swift in Sources */,
+				A7B31FB32233085C0058C48F /* ModulesCell.swift in Sources */,
 				A7B09EE5221CBA6B00A4A8BA /* GTProgressBarOrientation.swift in Sources */,
 				A79D42C3222A7A1B00D489D2 /* TCPickerViewDarkTheme.swift in Sources */,
 				A7B09EDE221CBA6B00A4A8BA /* FrameCalculator.swift in Sources */,
 				A70CF37F222787A000165ED5 /* Anchors.swift in Sources */,
 				A70CF3782227876700165ED5 /* MultiArray.swift in Sources */,
+				A7B2E3C02233A3A900D07CAB /* levenshtein.swift in Sources */,
 				A754A9C421FA22E100084E93 /* AppDelegate.swift in Sources */,
 				A79D429E222A346F00D489D2 /* ComputerVisionOCR.swift in Sources */,
+				A7B31FB12233084D0058C48F /* LensTVC.swift in Sources */,
 				A754A9F921FA268600084E93 /* SettingsVC.swift in Sources */,
 				A79D42C5222A7A1B00D489D2 /* TCPickerTableViewCell.swift in Sources */,
 				A7B09EDD221CBA6B00A4A8BA /* HorizontalLabelPositionFrameCalculator.swift in Sources */,

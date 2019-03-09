@@ -28,10 +28,26 @@
 
 import UIKit
 
+let translator = ROGoogleTranslate(with: "AIzaSyAe6wO_cOPMMnhWa2_lvspJhUhDGixkrJU")
 
-struct Language {
+
+struct Language:Codable {
   var name: String
   var abbreviation: String
+    init(name : String, abbreviation : String) {
+        self.name = name
+        self.abbreviation = abbreviation
+    }
+    
+    init?(dictionary : [String:String]) {
+        guard let title = dictionary["title"],
+            let abbr = dictionary["abbr"] else { return nil }
+        self.init(name: title, abbreviation: abbr)
+    }
+    
+    var propertyListRepresentation : [String:String] {
+        return ["title" : self.name, "abbr" : self.abbreviation]
+    }
 }
 
 class HandWritingVC: UIViewController {
@@ -48,6 +64,7 @@ class HandWritingVC: UIViewController {
   var label: String = ""
   var isCorrect: Bool = false
   var pureLabel: String = ""
+    var transLabel: String = ""
   
   var lastPoint = CGPoint.zero
   var color = UIColor.black
@@ -66,7 +83,7 @@ class HandWritingVC: UIViewController {
 
     
     ComputerVisionOCR.shared.configure(
-      apiKey:"bc5a9dfb6d5e4fae8cc289324cde1350",
+      apiKey:"b44ef5ba627e4977beea59ddde3c05af",
       baseUrl: "https://eastus.api.cognitive.microsoft.com/vision/v2.0")
     checkButton.isEnabled = false
     IBLabel.adjustsFontSizeToFitWidth = true
@@ -93,9 +110,9 @@ class HandWritingVC: UIViewController {
     let p = ROGoogleTranslateParams(source: "en",
                                     target: s.lang.abbreviation,
                                     text: self.label)
-    let t = ROGoogleTranslate(with: "AIzaSyAe6wO_cOPMMnhWa2_lvspJhUhDGixkrJU")
-    t.translate(params: p){(result) in
+    translator.translate(params: p){(result) in
       self.pureLabel = self.label
+      self.transLabel = result
       self.label  = self.label.capitalizingFirstLetter() + " :: "+result
       print("Translated")
       print(self.label)
@@ -160,12 +177,12 @@ class HandWritingVC: UIViewController {
     IBLabel.isHidden = false
     
     let entered = ComputerVisionOCR.shared.previousLabel.uppercased()
-    let correct = pureLabel.uppercased()
+    let correct = transLabel.uppercased()
     
     print("Entered: \(entered)")
     print("Correct: \(correct)")
     
-    if(entered == correct){
+    if(entered.levenshtein(correct) < 4){
       self.mainImageView.backgroundColor = UIColor.green
       CorrectLabel.isHidden = false
       isCorrect = true
@@ -176,10 +193,23 @@ class HandWritingVC: UIViewController {
       isCorrect = false
     }
     
-    let s  = self.presentingViewController as! CameraVC
     
+    let k = UserDefaults.standard.string(forKey: "VCPLens")!+"-"+pureLabel
+    let currCount = UserDefaults.standard.integer(forKey: k)
+    if(isCorrect){
+        if(currCount < 5){
+            UserDefaults.standard.set(currCount+1, forKey: k)
+        }
+    }
+    else{
+        if(currCount > -5){
+            UserDefaults.standard.set(currCount - 1, forKey: k)
+        }
+    }
+    print("Current Count:")
+    print(k)
+    print(UserDefaults.standard.integer(forKey: k))
     
-    s.words[pureLabel]! = (isCorrect) ? s.words[pureLabel]! + 1 : ((s.words[pureLabel]! < -3) ? -3 : s.words[pureLabel]! - 1)
     
     
     self.mainImageView.alpha = 0.4
